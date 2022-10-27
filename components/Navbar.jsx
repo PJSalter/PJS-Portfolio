@@ -39,7 +39,18 @@ const Navbar = () => {
       </NavContainer>
       {/* once the mobile menu appears the background behind has an overlay darker colour. */}
       <OverlayBackStyling>
-        <SideDrawMenu></SideDrawMenu>
+        <SideDrawMenu>
+          <div>
+            <TopSideDrawMenuStyling>
+              <StyleBorder>
+                <Image src={pic} alt="pjs-logo" width={150} height={154} />
+              </StyleBorder>
+              <div>
+                <AiOutlineClose />
+              </div>
+            </TopSideDrawMenuStyling>
+          </div>
+        </SideDrawMenu>
       </OverlayBackStyling>
     </StyledDivForNavbar>
   );
@@ -83,4 +94,18 @@ bg-light-pink
 p-10
 ease-in
 duration-500
+`;
+
+const TopSideDrawMenuStyling = tw.div`
+flex
+w-full
+items-center
+justify-between
+`;
+
+const StyleBorder = tw.div`
+rounded-md
+border-fuchsia
+border-double
+border-8
 `;
