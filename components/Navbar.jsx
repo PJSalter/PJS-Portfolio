@@ -15,7 +15,19 @@ const Navbar = () => {
         <div>
           <ul>
             <Link href="/">
-              <li>Home</li>
+              <ListStyling>Home</ListStyling>
+            </Link>
+            <Link href="/">
+              <ListStyling>About</ListStyling>
+            </Link>
+            <Link href="/">
+              <ListStyling>Skills</ListStyling>
+            </Link>
+            <Link href="/">
+              <ListStyling>Projects</ListStyling>
+            </Link>
+            <Link href="/">
+              <ListStyling>Contact</ListStyling>
             </Link>
           </ul>
         </div>
