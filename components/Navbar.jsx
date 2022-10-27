@@ -38,7 +38,9 @@ const Navbar = () => {
         </div>
       </NavContainer>
       {/* once the mobile menu appears the background behind has an overlay darker colour. */}
-      <OverlayBackStyling></OverlayBackStyling>
+      <OverlayBackStyling>
+        <SideDrawMenu></SideDrawMenu>
+      </OverlayBackStyling>
     </StyledDivForNavbar>
   );
 };
@@ -67,4 +69,18 @@ top-0
 w-full
 h-screen
 bg-dark-purple/70
+`;
+
+const SideDrawMenu = tw.div`
+fixed
+left-0
+top-0
+w-[75%]
+sm:w-[60%]
+md:w-[45%]
+h-screen
+bg-light-pink
+p-10
+ease-in
+duration-500
 `;
