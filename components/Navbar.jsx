@@ -3,6 +3,7 @@ import Image from "next/image";
 import pic from "../public/assets/pjs-software-developer.png";
 import styled from "styled-components";
 import tw from "twin.macro";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -10,6 +11,13 @@ const Navbar = () => {
       <NavContainer>
         <div css={tw`w-16 h-16 mb-1 object-left-top`}>
           <Image src={pic} alt="pjs-logo" />
+        </div>
+        <div>
+          <ul>
+            <Link href="/">
+              <li>Home</li>
+            </Link>
+          </ul>
         </div>
       </NavContainer>
     </StyledDivForNavbar>
