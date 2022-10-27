@@ -10,6 +10,7 @@ module.exports = {
       "slate-white": "#f8fafc",
       black: "#000000",
       "light-pink": "#fbcfe8",
+      fuchsia: "rgb(162 28 175)",
     },
     extend: {},
   },
