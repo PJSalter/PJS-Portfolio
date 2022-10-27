@@ -4,7 +4,7 @@ import pic from "../public/assets/pjs-software-developer.png";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
-import { AiOutlineClose } from "react-icons";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -32,11 +32,13 @@ const Navbar = () => {
               <ListStyling>Contact</ListStyling>
             </Link>
           </ul>
-          <div>
-            <AiOutlineClose />
+          <div css={tw`md:hidden`}>
+            <AiOutlineMenu size={25} />
           </div>
         </div>
       </NavContainer>
+      {/* once the mobile menu appears the background behind has an overlay darker colour. */}
+      <OverlayBackStyling></OverlayBackStyling>
     </StyledDivForNavbar>
   );
 };
@@ -48,7 +50,7 @@ const StyledDivForNavbar = styled.div`
 `;
 
 const NavContainer = styled.div`
-  ${tw`flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white`}
+  ${tw`flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-slate-white`}
 `;
 
 const ListStyling = tw.li`
@@ -56,4 +58,13 @@ ml-10
 text-sm
 uppercase
 hover:border-b
+`;
+
+const OverlayBackStyling = tw.div`
+fixed
+left-0
+top-0
+w-full
+h-screen
+bg-dark-purple/70
 `;
