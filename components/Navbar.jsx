@@ -4,6 +4,7 @@ import pic from "../public/assets/pjs-software-developer.png";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
+import { AiOutlineClose } from "react-icons";
 
 const Navbar = () => {
   return (
@@ -31,6 +32,9 @@ const Navbar = () => {
               <ListStyling>Contact</ListStyling>
             </Link>
           </ul>
+          <div>
+            <AiOutlineClose />
+          </div>
         </div>
       </NavContainer>
     </StyledDivForNavbar>
