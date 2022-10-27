@@ -13,7 +13,8 @@ const Navbar = () => {
           <Image src={pic} alt="pjs-logo" />
         </div>
         <div>
-          <ul>
+          {/* tailwind is great because it's mobile first always */}
+          <ul css={tw`hidden md:flex`}>
             <Link href="/">
               <ListStyling>Home</ListStyling>
             </Link>
