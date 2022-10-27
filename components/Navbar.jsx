@@ -33,3 +33,10 @@ const StyledDivForNavbar = styled.div`
 const NavContainer = styled.div`
   ${tw`flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white`}
 `;
+
+const ListStyling = tw.li`
+ml-10
+text-sm
+uppercase
+hover:border-b
+`;
