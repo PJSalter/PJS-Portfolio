@@ -43,11 +43,11 @@ const Navbar = () => {
           <div>
             <TopSideDrawMenuStyling>
               <StyleBorder>
-                <Image src={pic} alt="pjs-logo" width={150} height={154} />
+                <Image src={pic} alt="pjs-logo" width={150} height={150} />
               </StyleBorder>
-              <div>
+              <RoundedShadowStyling>
                 <AiOutlineClose />
-              </div>
+              </RoundedShadowStyling>
             </TopSideDrawMenuStyling>
           </div>
         </SideDrawMenu>
@@ -63,7 +63,7 @@ const StyledDivForNavbar = styled.div`
 `;
 
 const NavContainer = styled.div`
-  ${tw`flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-slate-white`}
+  ${tw`flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white`}
 `;
 
 const ListStyling = tw.li`
@@ -79,7 +79,7 @@ left-0
 top-0
 w-full
 h-screen
-bg-dark-purple/70
+bg-purple-800/70
 `;
 
 const SideDrawMenu = tw.div`
@@ -90,7 +90,7 @@ w-[75%]
 sm:w-[60%]
 md:w-[45%]
 h-screen
-bg-light-pink
+bg-pink-200
 p-10
 ease-in
 duration-500
@@ -105,7 +105,20 @@ justify-between
 
 const StyleBorder = tw.div`
 rounded-md
-border-fuchsia
+border-green-700
 border-double
 border-8
+`;
+
+const RoundedShadowStyling = tw.div`
+rounded-full
+shadow-lg
+shadow-green-400
+hover:shadow-inner
+md:drop-shadow-xl
+p-3
+cursor-pointer
+hover:scale-105
+ease-in
+duration-300
 `;
