@@ -11,7 +11,14 @@ const Navbar = () => {
     <StyledDivForNavbar>
       <NavContainer>
         <div css={tw`w-16 h-16 mb-1 object-left-top`}>
-          <Image src={pic} alt="pjs-logo" />
+          <Image
+            // src="/pjs-software-developer.png"
+            src={pic}
+            alt="pjs-logo-top"
+            placeholder="art"
+            width={150}
+            height={150}
+          />
         </div>
         <div>
           {/* tailwind is great because it's mobile first always */}
@@ -43,9 +50,16 @@ const Navbar = () => {
           <div>
             <TopSideDrawMenuStyling>
               <StyleBorder>
-                <Image src={pic} alt="pjs-logo" width={150} height={150} />
+                <Image
+                  // src="/pjs-software-developer.png"
+                  src={pic}
+                  alt="pjs-logo"
+                  width={150}
+                  height={150}
+                  placeholder="art"
+                />
               </StyleBorder>
-              <RoundedShadowStyling>
+              <RoundedShadowStyling className="shadow-lg shadow-sky-900">
                 <AiOutlineClose />
               </RoundedShadowStyling>
             </TopSideDrawMenuStyling>
@@ -105,15 +119,13 @@ justify-between
 
 const StyleBorder = tw.div`
 rounded-md
-border-green-700
+border-gray-700
 border-double
 border-8
 `;
 
 const RoundedShadowStyling = tw.div`
 rounded-full
-shadow-lg
-shadow-green-400
 hover:shadow-inner
 md:drop-shadow-xl
 p-3
