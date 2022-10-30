@@ -58,7 +58,9 @@ const Navbar = () => {
       {/* once the mobile menu appears the background behind has an overlay darker colour. */}
       <div
         css={
-          navbar ? tw`fixed left-0 top-0 w-full h-screen bg-purple-800/70` : ""
+          navbar
+            ? tw`md:hidden fixed left-0 top-0 w-full h-screen bg-purple-800/70`
+            : ""
         }
       >
         <div
