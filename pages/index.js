@@ -57,7 +57,7 @@ const ConditionalButton = styled.button(({ switchStyle }) => [
     ? tw`bg-[#581c87] hover:bg-[#f43f5e]`
     : tw`bg-[#0d9488] hover:bg-[#164e63]`,
   tw`
-    text-slate-white
+    text-slate-50
     font-bold
     py-2
     px-4
