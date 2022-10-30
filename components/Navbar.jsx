@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import pic from "../public/assets/pjs-software-developer.png";
 import styled from "styled-components";
