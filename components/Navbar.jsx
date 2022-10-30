@@ -63,6 +63,9 @@ const Navbar = () => {
                 <AiOutlineClose />
               </RoundedShadowStyling>
             </TopSideDrawMenuStyling>
+            <div>
+              <p>Building my first awesome coding portfolio</p>
+            </div>
           </div>
         </SideDrawMenu>
       </OverlayBackStyling>
