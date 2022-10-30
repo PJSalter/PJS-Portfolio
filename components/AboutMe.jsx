@@ -6,7 +6,15 @@ const AboutMe = () => {
   return (
     <div css={tw`w-full h-screen text-center`}>
       <AboutContainer>
-        <div></div>
+        <div>
+          <p>
+            <q>
+              Creativity and technology I believe go hand in hand. It is
+              beneficial to making a website that works but you can never go
+              wrong with an artistic yet professional front end!
+            </q>
+          </p>
+        </div>
       </AboutContainer>
     </div>
   );
