@@ -89,9 +89,20 @@ const Navbar = () => {
             </ul>
             <div css={tw`pt-40`}>
               <ConnectTextStyle>Connect with me</ConnectTextStyle>
-              <div>
-                <FaLinkedinIn />
-              </div>
+              <ConnectWrap>
+                <ConnectButtonStyle className="shadow-sky-900">
+                  <FaLinkedinIn />
+                </ConnectButtonStyle>
+                <ConnectButtonStyle className="shadow-sky-900">
+                  <FaGithub />
+                </ConnectButtonStyle>
+                <ConnectButtonStyle className="shadow-sky-900">
+                  <AiOutlineMail />
+                </ConnectButtonStyle>
+                <ConnectButtonStyle className="shadow-sky-900">
+                  <BsFillPersonLinesFill />
+                </ConnectButtonStyle>
+              </ConnectWrap>
             </div>
           </MobileMenuWrap>
         </SideDrawMenu>
@@ -171,4 +182,18 @@ const MobileMenuWrap = styled.div`
 
 const ConnectTextStyle = styled.p`
   ${tw`uppercase tracking-widest text-pink-700`}
+`;
+
+const ConnectButtonStyle = tw.div`
+rounded-full
+shadow-lg
+p-3
+cursor-pointer
+hover:scale-105
+ease-in
+duration-300
+`;
+
+const ConnectWrap = styled.div`
+  ${tw`flex items-center justify-between my-4 w-full sm:w-[80%]`}
 `;
