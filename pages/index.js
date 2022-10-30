@@ -4,6 +4,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Navbar from "../components/NavBar";
+import AboutMe from "../components/AboutMe";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <MainStyle>
         <RainbowTitle>Welcome to PJS-Coder-Portfolio</RainbowTitle>
+        <AboutMe />
       </MainStyle>
       <ConditionalButton switchStyle={false}>Press Me</ConditionalButton>
     </div>
