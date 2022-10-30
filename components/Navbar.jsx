@@ -63,7 +63,7 @@ const Navbar = () => {
                 <AiOutlineClose />
               </RoundedShadowStyling>
             </TopSideDrawMenuStyling>
-            <div>
+            <div css={tw`border-b border-b-pink-700 my-4`}>
               <p>Building my first awesome coding portfolio</p>
             </div>
           </div>
