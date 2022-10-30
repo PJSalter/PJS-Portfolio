@@ -11,6 +11,12 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 const Navbar = () => {
   // set the useSate to a default of false
   const [Navbar, setNavbar] = useState(false);
+
+  // function to handle toggling my menu
+  const handleNavbarMenu = () => {
+    // when every I run this function I will want it to set as true.
+    setNavbar(true);
+  };
   return (
     <StyledDivForNavbar>
       <NavContainer>
@@ -43,7 +49,8 @@ const Navbar = () => {
               <ListStyling>Contact</ListStyling>
             </Link>
           </ul>
-          <div css={tw`md:hidden`}>
+          {/* everytime I call the function I want it to activate once clicked on the menu hamburg. */}
+          <div onClick={handleNavbarMenu} css={tw`md:hidden`}>
             <AiOutlineMenu size={25} />
           </div>
         </div>
