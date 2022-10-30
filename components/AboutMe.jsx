@@ -11,10 +11,14 @@ const AboutMe = () => {
           <p>
             <q>
               Creativity and technology I believe go hand in hand. It is
-              beneficial to making a website that works but you can never go
-              wrong with an artistic yet professional front end!
+              beneficial to making a website that works functionally but you can
+              never go wrong with an artistic yet professional front end!
             </q>
           </p>
+          <h2>
+            Hello Everyone &#128075; I&apos;m Peter &#127912;
+            &#129489;&#8205;&#128187;
+          </h2>
         </div>
       </AboutContainer>
     </div>
