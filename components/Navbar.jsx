@@ -131,7 +131,7 @@ justify-between
 
 const StyleBorder = tw.div`
 rounded-md
-border-gray-700
+border-pink-700
 border-double
 border-8
 `;
