@@ -9,6 +9,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
+  // set the useSate to a default of false
+  const [Navbar, setNavbar] = useState(false);
   return (
     <StyledDivForNavbar>
       <NavContainer>
