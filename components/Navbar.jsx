@@ -70,7 +70,10 @@ const Navbar = () => {
                   placeholder="art"
                 />
               </StyleBorder>
-              <RoundedShadowStyling className="shadow-lg shadow-sky-900">
+              <RoundedShadowStyling
+                onClick={handleNavbarMenu}
+                className="shadow-lg shadow-sky-900"
+              >
                 <AiOutlineClose />
               </RoundedShadowStyling>
             </TopSideDrawMenuStyling>
