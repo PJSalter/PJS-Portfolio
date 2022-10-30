@@ -69,13 +69,25 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-          <div>
-            <ul>
+          <MobileMenuWrap>
+            <ul css={tw`uppercase`}>
               <Link href="/">
                 <li css={tw`py-4 text-sm`}>Home</li>
               </Link>
+              <Link href="/">
+                <li css={tw`py-4 text-sm`}>About</li>
+              </Link>
+              <Link href="/">
+                <li css={tw`py-4 text-sm`}>Skills</li>
+              </Link>
+              <Link href="/">
+                <li css={tw`py-4 text-sm`}>Projects</li>
+              </Link>
+              <Link href="/">
+                <li css={tw`py-4 text-sm`}>Contact</li>
+              </Link>
             </ul>
-          </div>
+          </MobileMenuWrap>
         </SideDrawMenu>
       </OverlayBackStyling>
     </StyledDivForNavbar>
@@ -145,4 +157,8 @@ cursor-pointer
 hover:scale-105
 ease-in
 duration-300
+`;
+
+const MobileMenuWrap = styled.div`
+  ${tw`py-4 flex flex-col`}
 `;
