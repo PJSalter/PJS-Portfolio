@@ -69,6 +69,13 @@ const Navbar = () => {
               </p>
             </div>
           </div>
+          <div>
+            <ul>
+              <Link href="/">
+                <li css={tw`py-4 text-sm`}>Home</li>
+              </Link>
+            </ul>
+          </div>
         </SideDrawMenu>
       </OverlayBackStyling>
     </StyledDivForNavbar>
