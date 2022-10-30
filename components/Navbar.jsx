@@ -64,7 +64,9 @@ const Navbar = () => {
               </RoundedShadowStyling>
             </TopSideDrawMenuStyling>
             <div css={tw`border-b border-b-pink-700 my-4`}>
-              <p>Building my first awesome coding portfolio</p>
+              <p css={tw`w-[85%] md:w-[90%] py-4`}>
+                Building my first awesome coding portfolio
+              </p>
             </div>
           </div>
         </SideDrawMenu>
