@@ -10,12 +10,12 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   // set the useSate to a default of false
-  const [Navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   // function to handle toggling my menu
   const handleNavbarMenu = () => {
     // when every I run this function I will want it to set as true.
-    setNavbar(true);
+    setNavbar(!navbar);
   };
   return (
     <StyledDivForNavbar>
@@ -56,8 +56,18 @@ const Navbar = () => {
         </div>
       </NavContainer>
       {/* once the mobile menu appears the background behind has an overlay darker colour. */}
-      <OverlayBackStyling>
-        <SideDrawMenu>
+      <div
+        css={
+          navbar ? tw`fixed left-0 top-0 w-full h-screen bg-purple-800/70` : ""
+        }
+      >
+        <div
+          css={
+            navbar
+              ? tw`fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-pink-200 p-10 ease-in duration-500`
+              : tw`fixed left-[-100%] top-0 p-10 ease-in duration-500`
+          }
+        >
           <div>
             <TopSideDrawMenuStyling>
               <StyleBorder>
@@ -119,8 +129,8 @@ const Navbar = () => {
               </ConnectWrap>
             </div>
           </MobileMenuWrap>
-        </SideDrawMenu>
-      </OverlayBackStyling>
+        </div>
+      </div>
     </StyledDivForNavbar>
   );
 };
@@ -142,28 +152,15 @@ uppercase
 hover:border-b
 `;
 
-const OverlayBackStyling = tw.div`
-fixed
-left-0
-top-0
-w-full
-h-screen
-bg-purple-800/70
-`;
+// const OverlayBackStyling = styled.div(({ navbar }) => [
+//   navbar ? tw`fixed left-0 top-0 w-full h-screen bg-purple-800/70` : "",
+// ]);
 
-const SideDrawMenu = tw.div`
-fixed
-left-0
-top-0
-w-[75%]
-sm:w-[60%]
-md:w-[45%]
-h-screen
-bg-pink-200
-p-10
-ease-in
-duration-500
-`;
+// const SideDrawMenu = styled.div(({ navbar }) => [
+//   navbar
+//     ? tw`fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-pink-200 p-10 ease-in duration-500`
+//     : tw`fixed left-[-100%] top-0 p-10 ease-in duration-500`,
+// ]);
 
 const TopSideDrawMenuStyling = tw.div`
 flex
