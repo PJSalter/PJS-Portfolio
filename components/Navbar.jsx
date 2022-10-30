@@ -4,7 +4,9 @@ import pic from "../public/assets/pjs-software-developer.png";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   return (
