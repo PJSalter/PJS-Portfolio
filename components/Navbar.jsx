@@ -87,6 +87,12 @@ const Navbar = () => {
                 <li css={tw`py-4 text-sm`}>Contact</li>
               </Link>
             </ul>
+            <div css={tw`pt-40`}>
+              <ConnectTextStyle>Connect with me</ConnectTextStyle>
+              <div>
+                <FaLinkedinIn />
+              </div>
+            </div>
           </MobileMenuWrap>
         </SideDrawMenu>
       </OverlayBackStyling>
@@ -161,4 +167,8 @@ duration-300
 
 const MobileMenuWrap = styled.div`
   ${tw`py-4 flex flex-col`}
+`;
+
+const ConnectTextStyle = styled.p`
+  ${tw`uppercase tracking-widest text-pink-700`}
 `;
