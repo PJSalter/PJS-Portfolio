@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const AboutMe = () => {
   return (
@@ -37,7 +40,20 @@ const AboutMe = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </BioAboutMe>
-          <div></div>
+          <ConnectWrap>
+            <ConnectButtonStyle>
+              <FaLinkedinIn />
+            </ConnectButtonStyle>
+            <ConnectButtonStyle>
+              <FaGithub />
+            </ConnectButtonStyle>
+            <ConnectButtonStyle>
+              <AiOutlineMail />
+            </ConnectButtonStyle>
+            <ConnectButtonStyle>
+              <BsFillPersonLinesFill />
+            </ConnectButtonStyle>
+          </ConnectWrap>
         </div>
       </AboutContainer>
     </div>
@@ -45,6 +61,21 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
+const ConnectWrap = styled.div`
+  ${tw`flex items-center justify-between my-4 w-full sm:w-[80%]`}
+`;
+
+const ConnectButtonStyle = tw.div`
+rounded-full
+p-3
+cursor-pointer
+hover:scale-105
+ease-in
+duration-300
+hover:shadow-inner
+md:drop-shadow-xl
+`;
 
 const AboutContainer = tw.div`
 max-w-[1240px]
