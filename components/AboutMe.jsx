@@ -8,20 +8,24 @@ const AboutMe = () => {
       <AboutContainer>
         <div>
           <RainbowTitle>Welcome to PJS-Coder-Portfolio</RainbowTitle>
-          <p>
+          <p css={tw`text-lg`}>
             <q>
-              Creativity and technology I believe go hand in hand. It is
-              beneficial to making a website that works functionally but you can
-              never go wrong with an artistic yet professional front end!
+              <i>
+                Creativity and technology I believe go hand in hand. It is
+                beneficial to making a website that works functionally but you
+                can never go wrong with an artistic yet professional front end!
+              </i>
             </q>
           </p>
-          <h2 css={tw`py-4 text-pink-600`}>
+          <h2 css={tw`py-4 text-pink-600 text-6xl`}>
             Hello Everyone &#128075;
             <div className="[word-spacing:0.1rem]">
               I&apos;m
               <span className="text-green-700 p-2">
                 Peter &#127912; &#129489;&#8205;&#128187;
               </span>
+              <br></br>
+              <br></br>A Software Developer
             </div>
           </h2>
         </div>
