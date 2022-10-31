@@ -16,8 +16,13 @@ const AboutMe = () => {
             </q>
           </p>
           <h2>
-            Hello Everyone &#128075; I&apos;m Peter &#127912;
-            &#129489;&#8205;&#128187;
+            Hello Everyone &#128075;
+            <div className="[word-spacing:0.1rem]">
+              I&apos;m
+              <span className="text-green-700 p-2">
+                Peter &#127912; &#129489;&#8205;&#128187;
+              </span>
+            </div>
           </h2>
         </div>
       </AboutContainer>
