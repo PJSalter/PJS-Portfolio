@@ -33,14 +33,18 @@ const AboutMe = () => {
             </div>
           </h2>
           <BioAboutMe>
-            My name is Peter James Salter, I&apos;ve recently Graduated from
-            Founders and Coders as part of FAC24 Cohort, on a full Stack skills
-            bootcamp. I&apos;ve always delved into coding since college. I
-            completed a BTEC level 2 in IT and it contained a unit on HTML and
-            CSS. I first got into learning code from an online course where I
-            achieved a level 3 in Web design and Development while I worked in
-            other fields. I full endulged in learning to code once the first
-            lockdown hit and I was furloghed from my job.
+            My name is Peter James Salter, I&apos;ve recently graduated from
+            Founders and Coders, FAC24 cohort, Full Stack Skills Bootcamp.
+            I&apos;ve dabbled in coding since college where I completed a BTEC
+            Level 2 IT Certificate in HTML and CSS. More recently, I studied
+            online and achieved a Level 3 Web Design and Development
+            Certificate. I fully committed to learning to code with my partner
+            during lockdown where we were both furloghed and began pair
+            programming coding challenges together. I&apos;ve recently mentored
+            FAC25, covering React Client Side App, Next JS Full Stack App, User
+            Research, Discovery and Analysis Workshops for Design Week. This
+            portfolio is made with Next JS (v13), React, Styled Components and
+            Tailwind.
           </BioAboutMe>
           <ConnectWrap>
             <a
