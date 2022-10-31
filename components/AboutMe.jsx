@@ -48,27 +48,27 @@ const AboutMe = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <ConnectButtonStyle>
+              <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
                 <FaLinkedinIn />
-              </ConnectButtonStyle>
+              </AboutConnectButtonStyle>
             </a>
             <a
               href="https://github.com/PJSalter"
               target="_blank"
               rel="noreferrer"
             >
-              <ConnectButtonStyle>
+              <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
                 <FaGithub />
-              </ConnectButtonStyle>
+              </AboutConnectButtonStyle>
             </a>
             <Link href="mailto:psalter88@googlemail.com">
-              <ConnectButtonStyle>
+              <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
                 <AiOutlineMail />
-              </ConnectButtonStyle>
+              </AboutConnectButtonStyle>
             </Link>
-            <ConnectButtonStyle>
+            <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
               <BsFillPersonLinesFill />
-            </ConnectButtonStyle>
+            </AboutConnectButtonStyle>
           </ConnectWrap>
         </div>
       </AboutContainer>
@@ -79,14 +79,14 @@ const AboutMe = () => {
 export default AboutMe;
 
 const ConnectWrap = styled.div`
-  ${tw`flex items-center justify-between my-4 w-full sm:w-[80%]`}
+  ${tw`flex items-center justify-between w-full max-w-[330px] m-auto py-4`}
 `;
 
-const ConnectButtonStyle = tw.div`
+const AboutConnectButtonStyle = tw.div`
 rounded-full
-p-3
+p-6
 cursor-pointer
-hover:scale-105
+hover:scale-110
 ease-in
 duration-300
 hover:shadow-inner
