@@ -88,9 +88,10 @@ p-6
 cursor-pointer
 hover:scale-110
 ease-in
-duration-300
+duration-500
 hover:shadow-inner
 md:drop-shadow-xl
+bg-pink-400
 `;
 
 const AboutContainer = tw.div`
