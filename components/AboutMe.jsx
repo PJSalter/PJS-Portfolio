@@ -41,12 +41,24 @@ const AboutMe = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </BioAboutMe>
           <ConnectWrap>
-            <ConnectButtonStyle>
-              <FaLinkedinIn />
-            </ConnectButtonStyle>
-            <ConnectButtonStyle>
-              <FaGithub />
-            </ConnectButtonStyle>
+            <a
+              href="https://www.linkedin.com/in/peter-james-salter/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ConnectButtonStyle>
+                <FaLinkedinIn />
+              </ConnectButtonStyle>
+            </a>
+            <a
+              href="https://github.com/PJSalter"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ConnectButtonStyle>
+                <FaGithub />
+              </ConnectButtonStyle>
+            </a>
             <ConnectButtonStyle>
               <AiOutlineMail />
             </ConnectButtonStyle>
