@@ -60,16 +60,14 @@ const AboutMe = () => {
                 <FaGithub />
               </ConnectButtonStyle>
             </a>
-            <Link>
+            <Link href="mailto:psalter88@googlemail.com">
               <ConnectButtonStyle>
                 <AiOutlineMail />
               </ConnectButtonStyle>
             </Link>
-            <Link>
-              <ConnectButtonStyle>
-                <BsFillPersonLinesFill />
-              </ConnectButtonStyle>
-            </Link>
+            <ConnectButtonStyle>
+              <BsFillPersonLinesFill />
+            </ConnectButtonStyle>
           </ConnectWrap>
         </div>
       </AboutContainer>
