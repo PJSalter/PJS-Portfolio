@@ -33,13 +33,14 @@ const AboutMe = () => {
             </div>
           </h2>
           <BioAboutMe>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            My name is Peter James Salter, I&apos;ve recently Graduated from
+            Founders and Coders as part of FAC24 Cohort, on a full Stack skills
+            bootcamp. I&apos;ve always delved into coding since college. I
+            completed a BTEC level 2 in IT and it contained a unit on HTML and
+            CSS. I first got into learning code from an online course where I
+            achieved a level 3 in Web design and Development while I worked in
+            other fields. I full endulged in learning to code once the first
+            lockdown hit and I was furloghed from my job.
           </BioAboutMe>
           <ConnectWrap>
             <a
