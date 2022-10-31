@@ -15,7 +15,7 @@ const AboutMe = () => {
               never go wrong with an artistic yet professional front end!
             </q>
           </p>
-          <h2>
+          <h2 css={tw`py-4 text-pink-600`}>
             Hello Everyone &#128075;
             <div className="[word-spacing:0.1rem]">
               I&apos;m
