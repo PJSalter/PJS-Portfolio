@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -59,12 +60,16 @@ const AboutMe = () => {
                 <FaGithub />
               </ConnectButtonStyle>
             </a>
-            <ConnectButtonStyle>
-              <AiOutlineMail />
-            </ConnectButtonStyle>
-            <ConnectButtonStyle>
-              <BsFillPersonLinesFill />
-            </ConnectButtonStyle>
+            <Link>
+              <ConnectButtonStyle>
+                <AiOutlineMail />
+              </ConnectButtonStyle>
+            </Link>
+            <Link>
+              <ConnectButtonStyle>
+                <BsFillPersonLinesFill />
+              </ConnectButtonStyle>
+            </Link>
           </ConnectWrap>
         </div>
       </AboutContainer>
