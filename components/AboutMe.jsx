@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -29,15 +33,47 @@ const AboutMe = () => {
             </div>
           </h2>
           <BioAboutMe>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            My name is Peter James Salter, I&apos;ve recently graduated from
+            Founders and Coders, FAC24 cohort, Full Stack Skills Bootcamp.
+            I&apos;ve dabbled in coding since college where I completed a BTEC
+            Level 2 IT Certificate in HTML and CSS. More recently, I studied
+            online and achieved a Level 3 Web Design and Development
+            Certificate. I fully committed to learning to code with my partner
+            during lockdown where we were both furloghed and began pair
+            programming coding challenges together. I&apos;ve recently mentored
+            FAC25, covering React Client Side App, Next JS Full Stack App, User
+            Research, Discovery and Analysis Workshops for Design Week. This
+            portfolio is made with Next JS (v13), React, Styled Components and
+            Tailwind.
           </BioAboutMe>
-          <div></div>
+          <ConnectWrap>
+            <a
+              href="https://www.linkedin.com/in/peter-james-salter/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
+                <FaLinkedinIn />
+              </AboutConnectButtonStyle>
+            </a>
+            <a
+              href="https://github.com/PJSalter"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
+                <FaGithub />
+              </AboutConnectButtonStyle>
+            </a>
+            <Link href="mailto:psalter88@googlemail.com">
+              <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
+                <AiOutlineMail />
+              </AboutConnectButtonStyle>
+            </Link>
+            <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
+              <BsFillPersonLinesFill />
+            </AboutConnectButtonStyle>
+          </ConnectWrap>
         </div>
       </AboutContainer>
     </div>
@@ -45,6 +81,22 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
+const ConnectWrap = styled.div`
+  ${tw`flex items-center justify-between w-full max-w-[330px] m-auto py-4`}
+`;
+
+const AboutConnectButtonStyle = tw.div`
+rounded-full
+p-6
+cursor-pointer
+hover:scale-110
+ease-in
+duration-500
+hover:shadow-inner
+md:drop-shadow-xl
+bg-pink-400
+`;
 
 const AboutContainer = tw.div`
 max-w-[1240px]
