@@ -28,6 +28,16 @@ const AboutMe = () => {
               <br></br>A Software Developer
             </div>
           </h2>
+          <BioAboutMe>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </BioAboutMe>
+          <div></div>
         </div>
       </AboutContainer>
     </div>
@@ -66,4 +76,11 @@ const RainbowTitle = styled.h1`
   line-height: 1.15;
   font-size: 4rem;
   padding: 5%;
+`;
+
+const BioAboutMe = tw.p`
+py-4
+text-purple-900
+max-w-[70%]
+m-auto
 `;
