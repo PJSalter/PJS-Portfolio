@@ -4,6 +4,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Navbar from "../components/NavBar";
+import AboutMe from "../components/AboutMe";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       </Head>
       <Navbar />
       <MainStyle>
-        <RainbowTitle>Welcome to PJS-Coder-Portfolio</RainbowTitle>
+        {/* <RainbowTitle /> */}
+        <AboutMe />
       </MainStyle>
       <ConditionalButton switchStyle={false}>Press Me</ConditionalButton>
     </div>
@@ -32,25 +34,25 @@ const MainStyle = styled.main`
   align-items: center;
 `;
 
-const RainbowTitle = styled.h1`
-  background: linear-gradient(
-    to right,
-    #ef5350,
-    #f48fb1,
-    #7e57c2,
-    #2196f3,
-    #26c6da,
-    #43a047,
-    #eeff41,
-    #f9a825,
-    #ff5722
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-`;
+// const RainbowTitle = styled.h1`
+//   background: linear-gradient(
+//     to right,
+//     #ef5350,
+//     #f48fb1,
+//     #7e57c2,
+//     #2196f3,
+//     #26c6da,
+//     #43a047,
+//     #eeff41,
+//     #f9a825,
+//     #ff5722
+//   );
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   margin: 0;
+//   line-height: 1.15;
+//   font-size: 4rem;
+// `;
 
 const ConditionalButton = styled.button(({ switchStyle }) => [
   switchStyle

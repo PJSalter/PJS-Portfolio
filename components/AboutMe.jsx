@@ -1,0 +1,86 @@
+import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
+
+const AboutMe = () => {
+  return (
+    <div css={tw`w-full h-screen text-center`}>
+      <AboutContainer>
+        <div>
+          <RainbowTitle>Welcome to PJS-Coder-Portfolio</RainbowTitle>
+          <p css={tw`text-lg`}>
+            <q>
+              <i>
+                Creativity and technology I believe go hand in hand. It is
+                beneficial to making a website that works functionally but you
+                can never go wrong with an artistic yet professional front end!
+              </i>
+            </q>
+          </p>
+          <h2 css={tw`py-4 text-pink-600 text-6xl`}>
+            Hello Everyone &#128075;
+            <div className="[word-spacing:0.1rem]">
+              I&apos;m
+              <span className="text-green-700 p-2">
+                Peter &#127912; &#129489;&#8205;&#128187;
+              </span>
+              <br></br>
+              <br></br>A Software Developer
+            </div>
+          </h2>
+          <BioAboutMe>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </BioAboutMe>
+          <div></div>
+        </div>
+      </AboutContainer>
+    </div>
+  );
+};
+
+export default AboutMe;
+
+const AboutContainer = tw.div`
+max-w-[1240px]
+w-full
+h-full
+mx-auto
+p-2
+flex
+justify-center
+items-center
+`;
+
+const RainbowTitle = styled.h1`
+  background: linear-gradient(
+    to right,
+    #ef5350,
+    #f48fb1,
+    #7e57c2,
+    #2196f3,
+    #26c6da,
+    #43a047,
+    #eeff41,
+    #f9a825,
+    #ff5722
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  padding: 5%;
+`;
+
+const BioAboutMe = tw.p`
+py-4
+text-purple-900
+max-w-[70%]
+m-auto
+`;
