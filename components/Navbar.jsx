@@ -66,8 +66,8 @@ const Navbar = () => {
         <div
           css={
             navbar
-              ? tw`fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-pink-200 p-10 ease-in duration-500`
-              : tw`fixed left-[-100%] top-0 p-10 ease-in duration-500`
+              ? tw` md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-pink-200 p-10 ease-in duration-500`
+              : tw` md:hidden fixed left-[-100%] top-0 p-10 ease-in duration-500`
           }
         >
           <div>
@@ -89,7 +89,7 @@ const Navbar = () => {
                 <AiOutlineClose />
               </RoundedShadowStyling>
             </TopSideDrawMenuStyling>
-            <div css={tw`border-b border-b-pink-700 my-4`}>
+            <div css={tw`md:hidden border-b border-b-pink-700 my-4`}>
               <p css={tw`w-[85%] md:w-[90%] py-4`}>
                 Building my first awesome coding portfolio
               </p>
