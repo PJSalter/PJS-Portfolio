@@ -4,24 +4,27 @@ import tw from "twin.macro";
 
 const AboutMe = () => {
   return (
-    <div css={tw`w-full h-screen text-center`}>
-      <RainbowTitle>My Journey</RainbowTitle>
-      <AboutContainer>
-        <BioAboutMe>
-          My name is Peter James Salter, I&apos;ve recently graduated from
-          Founders and Coders, FAC24 cohort, Full Stack Skills Bootcamp.
-          I&apos;ve dabbled in coding since college where I completed a BTEC
-          Level 2 IT Certificate in HTML and CSS. More recently, I studied
-          online and achieved a Level 3 Web Design and Development Certificate.
-          I fully committed to learning to code with my partner during lockdown
-          where we were both furloghed and began pair programming coding
-          challenges together. I&apos;ve recently mentored FAC25, covering React
-          Client Side App, Next JS Full Stack App, User Research, Discovery and
-          Analysis Workshops for Design Week. This portfolio is made with Next
-          JS (v13), React, Styled Components and Tailwind.
-        </BioAboutMe>
-      </AboutContainer>
-    </div>
+    <>
+      <div css={tw`w-full h-screen text-center`}>
+        <RainbowTitle>My Journey</RainbowTitle>
+        <AboutContainer>
+          <BioAboutMe>
+            My name is Peter James Salter, I&apos;ve recently graduated from
+            Founders and Coders, FAC24 cohort, Full Stack Skills Bootcamp.
+            I&apos;ve dabbled in coding since college where I completed a BTEC
+            Level 2 IT Certificate in HTML and CSS. More recently, I studied
+            online and achieved a Level 3 Web Design and Development
+            Certificate. I fully committed to learning to code with my partner
+            during lockdown where we were both furloghed and began pair
+            programming coding challenges together. I&apos;ve recently mentored
+            FAC25, covering React Client Side App, Next JS Full Stack App, User
+            Research, Discovery and Analysis Workshops for Design Week. This
+            portfolio is made with Next JS (v13), React, Styled Components and
+            Tailwind.
+          </BioAboutMe>
+        </AboutContainer>
+      </div>
+    </>
   );
 };
 
