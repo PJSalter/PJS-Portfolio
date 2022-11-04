@@ -29,6 +29,177 @@ const MySkills = () => {
               </div>
             </div>
           </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
+            </div>
+          </div>
         </Grid>
       </SkillsContainer>
     </div>
