@@ -6,6 +6,7 @@ import tw from "twin.macro";
 import Navbar from "../components/NavBar";
 import AboutMe from "../components/AboutMe";
 import FrontPresentedPage from "../components/FrontPresentedPage";
+import MySkills from "../components/MySkills";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <MainStyle>
         <FrontPresentedPage />
         <AboutMe />
+        <MySkills />
       </MainStyle>
       <ConditionalButton switchStyle={false}>Press Me</ConditionalButton>
     </div>
