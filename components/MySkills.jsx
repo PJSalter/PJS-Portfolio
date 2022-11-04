@@ -12,6 +12,8 @@ import picReactSkill from ".//../public/assets/Skills/React-logo.png";
 import nextLogo from ".//../public/assets/Skills/nextjs-logo.png";
 import skillOfTypescript from ".//../public/assets/Skills/TypeScript.png";
 import rubySkill from ".//../public/assets/Skills/png_ruby.png";
+import skillOfjava from ".//../public/assets/Skills/java-logo.png";
+import cypressTestingSkill from ".//../public/assets/Skills/cypress-logo.png";
 
 const MySkills = () => {
   return (
@@ -206,6 +208,44 @@ const MySkills = () => {
               </SkillsImageWrap>
               <div css={tw`flex flex-col items-center justify-center`}>
                 <h4>Ruby</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={skillOfjava}
+                  width={64}
+                  height={64}
+                  placeholder="javaskill"
+                  alt="java-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>Java</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={cypressTestingSkill}
+                  width={64}
+                  height={64}
+                  placeholder="cypressTestingSkill"
+                  alt="Cypress-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>Cypress</h4>
               </div>
             </div>
           </div>
