@@ -3,6 +3,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import Image from "next/image";
 import htmlLogo from ".//../public/assets/Skills/html5.png";
+import stylingLogo from ".//../public/assets/Skills/css.png";
 
 const MySkills = () => {
   return (
@@ -36,15 +37,15 @@ const MySkills = () => {
             <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
               <SkillsImageWrap>
                 <Image
-                  src={htmlLogo}
+                  src={stylingLogo}
                   width={64}
                   height={64}
-                  placeholder="skill"
-                  alt="html-logo"
+                  placeholder="CSSskill"
+                  alt="CSS-logo"
                 />
               </SkillsImageWrap>
               <div css={tw`flex flex-col items-center justify-center`}>
-                <h4>HTML</h4>
+                <h4>CSS</h4>
               </div>
             </div>
           </div>
