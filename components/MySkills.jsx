@@ -1,6 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
+import Image from "next/image";
 
 const MySkills = () => {
   return (
@@ -9,7 +10,15 @@ const MySkills = () => {
         <RainbowTitle>My Tech Skills</RainbowTitle>
         <h3 css={tw`py-4`}>What I can do</h3>
         <Grid>
-          <div></div>
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image alt="/" />
+              </SkillsImageWrap>
+            </div>
+          </div>
         </Grid>
       </SkillsContainer>
     </div>
@@ -50,4 +59,8 @@ const RainbowTitle = styled.p`
   line-height: 1.15;
   font-size: 4rem;
   padding: 5%;
+`;
+
+const SkillsImageWrap = styled.div`
+  ${tw`m-auto`}
 `;
