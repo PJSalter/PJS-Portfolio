@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import Image from "next/image";
+import htmlLogo from ".//../public/assets/Skills/html5.png";
 
 const MySkills = () => {
   return (
@@ -15,7 +16,13 @@ const MySkills = () => {
           >
             <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
               <SkillsImageWrap>
-                <Image alt="/" />
+                <Image
+                  src={htmlLogo}
+                  width={64}
+                  height={64}
+                  placeholder="skill"
+                  alt="html-logo"
+                />
               </SkillsImageWrap>
             </div>
           </div>
