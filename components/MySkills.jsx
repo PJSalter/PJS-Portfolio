@@ -14,6 +14,10 @@ import skillOfTypescript from ".//../public/assets/Skills/TypeScript.png";
 import rubySkill from ".//../public/assets/Skills/png_ruby.png";
 import skillOfjava from ".//../public/assets/Skills/java-logo.png";
 import cypressTestingSkill from ".//../public/assets/Skills/cypress-logo.png";
+import tailwindSkill from ".//../public/assets/Skills/tailwindcss.png";
+import skillOfStyledComponents from ".//../public/assets/Skills/styled-components.png";
+import playwrightTesting from ".//../public/assets/Skills/playwright.png";
+import JestTesting from ".//../public/assets/Skills/jest.png";
 
 const MySkills = () => {
   return (
@@ -246,6 +250,82 @@ const MySkills = () => {
               </SkillsImageWrap>
               <div css={tw`flex flex-col items-center justify-center`}>
                 <h4>Cypress</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={tailwindSkill}
+                  width={64}
+                  height={64}
+                  placeholder="tailwindSkill"
+                  alt="tailwind-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>TailwindCSS</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={skillOfStyledComponents}
+                  width={64}
+                  height={64}
+                  placeholder="skillOfStyledComponents"
+                  alt="Styled-Components-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>Styled-Components</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={playwrightTesting}
+                  width={64}
+                  height={64}
+                  placeholder="playwrightTesting"
+                  alt="playwright-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>Playwright</h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
+          >
+            <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
+              <SkillsImageWrap>
+                <Image
+                  src={JestTesting}
+                  width={64}
+                  height={64}
+                  placeholder="JestTesting"
+                  alt="JestTesting-logo"
+                />
+              </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>Jest</h4>
               </div>
             </div>
           </div>
