@@ -6,6 +6,12 @@ import htmlLogo from ".//../public/assets/Skills/html5.png";
 import stylingLogo from ".//../public/assets/Skills/css.png";
 import javascriptLogo from ".//../public/assets/Skills/JavaScript-Logo-profile.png";
 import nodeskill from ".//../public/assets/Skills/nodejs-logo.png";
+import expressLogo from ".//../public/assets/Skills/expressjs.png";
+import postgresqlLogo from ".//../public/assets/Skills/postgresql-logo.png";
+import picReactSkill from ".//../public/assets/Skills/React-logo.png";
+import nextLogo from ".//../public/assets/Skills/nextjs-logo.png";
+import skillOfTypescript from ".//../public/assets/Skills/TypeScript.png";
+import rubySkill from ".//../public/assets/Skills/png_ruby.png";
 
 const MySkills = () => {
   return (
@@ -96,15 +102,15 @@ const MySkills = () => {
             <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
               <SkillsImageWrap>
                 <Image
-                  src={htmlLogo}
+                  src={expressLogo}
                   width={64}
                   height={64}
-                  placeholder="skill"
-                  alt="html-logo"
+                  placeholder="expressskill"
+                  alt="express-logo"
                 />
               </SkillsImageWrap>
               <div css={tw`flex flex-col items-center justify-center`}>
-                <h4>HTML</h4>
+                <h4>Express.js</h4>
               </div>
             </div>
           </div>
@@ -115,15 +121,15 @@ const MySkills = () => {
             <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
               <SkillsImageWrap>
                 <Image
-                  src={htmlLogo}
+                  src={postgresqlLogo}
                   width={64}
                   height={64}
-                  placeholder="skill"
-                  alt="html-logo"
+                  placeholder="postgresqlskill"
+                  alt="postgresql-logo"
                 />
               </SkillsImageWrap>
               <div css={tw`flex flex-col items-center justify-center`}>
-                <h4>HTML</h4>
+                <h4>PostgreSQL</h4>
               </div>
             </div>
           </div>
@@ -134,15 +140,15 @@ const MySkills = () => {
             <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
               <SkillsImageWrap>
                 <Image
-                  src={htmlLogo}
+                  src={picReactSkill}
                   width={64}
                   height={64}
-                  placeholder="skill"
-                  alt="html-logo"
+                  placeholder="react-skill"
+                  alt="react-logo"
                 />
               </SkillsImageWrap>
               <div css={tw`flex flex-col items-center justify-center`}>
-                <h4>HTML</h4>
+                <h4>React.js</h4>
               </div>
             </div>
           </div>
@@ -153,15 +159,15 @@ const MySkills = () => {
             <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
               <SkillsImageWrap>
                 <Image
-                  src={htmlLogo}
+                  src={nextLogo}
                   width={64}
                   height={64}
-                  placeholder="skill"
-                  alt="html-logo"
+                  placeholder="nextskill"
+                  alt="next-logo"
                 />
               </SkillsImageWrap>
               <div css={tw`flex flex-col items-center justify-center`}>
-                <h4>HTML</h4>
+                <h4>Next.js</h4>
               </div>
             </div>
           </div>
@@ -172,15 +178,15 @@ const MySkills = () => {
             <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
               <SkillsImageWrap>
                 <Image
-                  src={htmlLogo}
+                  src={skillOfTypescript}
                   width={64}
                   height={64}
-                  placeholder="skill"
-                  alt="html-logo"
+                  placeholder="typescriptskill"
+                  alt="typescript-logo"
                 />
               </SkillsImageWrap>
               <div css={tw`flex flex-col items-center justify-center`}>
-                <h4>HTML</h4>
+                <h4>TypeScript</h4>
               </div>
             </div>
           </div>
@@ -191,15 +197,15 @@ const MySkills = () => {
             <div css={tw`grid grid-cols-2 gap-4 justify-center items-center`}>
               <SkillsImageWrap>
                 <Image
-                  src={htmlLogo}
+                  src={rubySkill}
                   width={64}
                   height={64}
-                  placeholder="skill"
-                  alt="html-logo"
+                  placeholder="rubyskill"
+                  alt="ruby-logo"
                 />
               </SkillsImageWrap>
               <div css={tw`flex flex-col items-center justify-center`}>
-                <h4>HTML</h4>
+                <h4>Ruby</h4>
               </div>
             </div>
           </div>
