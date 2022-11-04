@@ -24,6 +24,9 @@ const MySkills = () => {
                   alt="html-logo"
                 />
               </SkillsImageWrap>
+              <div css={tw`flex flex-col items-center justify-center`}>
+                <h4>HTML</h4>
+              </div>
             </div>
           </div>
         </Grid>
