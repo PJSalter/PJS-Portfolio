@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import tw from "twin.macro";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import tw from "twin.macro";
+import CreativeProjectItem from "../components/CreativeProjectItem.jsx";
 import techForBetterProject from "../public/assets/Projects/alis-learning-project.png";
 
 const MyProjects = () => {
@@ -12,24 +13,46 @@ const MyProjects = () => {
         <MyTitleForProjects>Projects</MyTitleForProjects>
         <h2 className="py-4">What I have built</h2>
         <ContainerCarryingMyBuiltProjects>
-          <DevelopmentProject className="group">
-            <Image
-              className="rounded-xl group-hover:opacity-10"
-              src={techForBetterProject}
-              alt="/"
-            />
-            <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-              <h3 className="text-2xl text-white tracking-wider text-center">
-                Alis Learning
-              </h3>
-              <p className="pb-4 pt-2 text-white text-center">Next.js React</p>
-              <Link href="/">
-                <p className="text-center py-3 rounded-lg bg-white text-yellow-500 font-bold text-lg cursor-pointer">
-                  An interactive app that helps dyslexic children read and write
-                </p>
-              </Link>
-            </div>
-          </DevelopmentProject>
+          <CreativeProjectItem
+            title="Tech for better project"
+            techForBetterProject={techForBetterProject}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
+          <CreativeProjectItem
+            title="Tech for better project"
+            techForBetterProject={techForBetterProject}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
+          <CreativeProjectItem
+            title="Tech for better project"
+            techForBetterProject={techForBetterProject}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
+          <CreativeProjectItem
+            title="Tech for better project"
+            techForBetterProject={techForBetterProject}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
+          <CreativeProjectItem
+            title="Tech for better project"
+            techForBetterProject={techForBetterProject}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
+          <CreativeProjectItem
+            title="Tech for better project"
+            techForBetterProject={techForBetterProject}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
+          <CreativeProjectItem
+            title="Tech for better project"
+            techForBetterProject={techForBetterProject}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
+          <CreativeProjectItem
+            title="Tech for better project"
+            techForBetterProject={techForBetterProject}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
         </ContainerCarryingMyBuiltProjects>
       </ProjectSectionContainer>
     </div>
@@ -69,8 +92,4 @@ const MyTitleForProjects = styled.p`
   line-height: 1.15;
   font-size: 4rem;
   padding: 5%;
-`;
-
-const DevelopmentProject = styled.div`
-  ${tw`relative flex items-center justify-center h-auto w-full shadow-xl shadow-[#9892B1] rounded-xl p-4 hover:bg-gradient-to-r from-[#5651e5] to-cyan-900`}
 `;
