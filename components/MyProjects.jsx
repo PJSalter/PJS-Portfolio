@@ -1,14 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import Image from "next/image";
+import techForBetterProject from "../public/assets/Projects/alis-learning-project.png";
 
 const MyProjects = () => {
   return (
     <div className="w-full">
       <ProjectSectionContainer>
         <MyTitleForProjects>Projects</MyTitleForProjects>
-        <h2>What I have built</h2>
-        <ContainerCarryingMyBuiltProjects></ContainerCarryingMyBuiltProjects>
+        <h2 className="py-4">What I have built</h2>
+        <ContainerCarryingMyBuiltProjects>
+          <DevelopmentProject>
+            <Image src={techForBetterProject} alt="/" />
+          </DevelopmentProject>
+        </ContainerCarryingMyBuiltProjects>
       </ProjectSectionContainer>
     </div>
   );
@@ -47,4 +53,8 @@ const MyTitleForProjects = styled.p`
   line-height: 1.15;
   font-size: 4rem;
   padding: 5%;
+`;
+
+const DevelopmentProject = styled.div`
+  ${tw`relative flex items-center justify-center h-auto w-full shadow-xl shadow-[#9892B1] rounded-xl p-4 hover:bg-gradient-to-r from-[#5651e5] to-cyan-900`}
 `;
