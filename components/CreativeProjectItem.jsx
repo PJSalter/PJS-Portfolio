@@ -4,7 +4,12 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
 
-const CreativeProjectItem = ({ title, backgroundImg, projectUrl }) => {
+const CreativeProjectItem = ({
+  title,
+  backgroundImg,
+  projectUrl,
+  subTitle,
+}) => {
   return (
     <DevelopmentProject className="group">
       <Image
@@ -16,7 +21,7 @@ const CreativeProjectItem = ({ title, backgroundImg, projectUrl }) => {
         <h3 className="text-2xl text-white tracking-wider text-center">
           {title}
         </h3>
-        <p className="pb-4 pt-2 text-white text-center">Next.js React</p>
+        <p className="pb-4 pt-2 text-white text-center">{subTitle}</p>
         <Link href={projectUrl}>
           <p className="text-center py-3 rounded-lg bg-white text-yellow-500 font-bold text-lg cursor-pointer">
             Click to view work
