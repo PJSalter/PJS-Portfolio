@@ -5,6 +5,15 @@ import Image from "next/image";
 import tw from "twin.macro";
 import CreativeProjectItem from "../components/CreativeProjectItem.jsx";
 import techForBetterProject from "../public/assets/Projects/alis-learning-project.png";
+import paintboxApp from "../public/assets/Projects/Paintbox.png";
+import gardenShop from "../public/assets/Projects/LittleGarden.png";
+import reactGame from "../public/assets/Projects/Broccoli-game.png";
+import broccoliAnimation from "../public/assets/Projects/broccoli-animation.png";
+import RainbowTicTacToe from "../public/assets/Projects/tic-tac-toe-project.png";
+import bingePad from "../public/assets/Projects/BingePad.png";
+import sheldonia from "../public/assets/Projects/sheldonia.png";
+import techAgency from "../public/assets/Projects/vedTechAgencyProject.png";
+import pokedex from "../public/assets/Projects/pokedex.png";
 
 const MyProjects = () => {
   return (
@@ -15,42 +24,52 @@ const MyProjects = () => {
         <ContainerCarryingMyBuiltProjects>
           <CreativeProjectItem
             title="Tech for better project"
-            techForBetterProject={techForBetterProject}
+            backgroundImg={techForBetterProject}
             projectUrl="https://github.com/fac24/alis-learning"
           />
           <CreativeProjectItem
-            title="Tech for better project"
-            techForBetterProject={techForBetterProject}
+            title="Art therapy App"
+            backgroundImg={paintboxApp}
             projectUrl="https://github.com/fac24/alis-learning"
           />
           <CreativeProjectItem
-            title="Tech for better project"
-            techForBetterProject={techForBetterProject}
+            title="Little Garden App"
+            backgroundImg={gardenShop}
             projectUrl="https://github.com/fac24/alis-learning"
           />
           <CreativeProjectItem
-            title="Tech for better project"
-            techForBetterProject={techForBetterProject}
+            title="Broccoli Game"
+            backgroundImg={reactGame}
             projectUrl="https://github.com/fac24/alis-learning"
           />
           <CreativeProjectItem
-            title="Tech for better project"
-            techForBetterProject={techForBetterProject}
+            title="Rainbow themed tic tac toe game"
+            backgroundImg={RainbowTicTacToe}
             projectUrl="https://github.com/fac24/alis-learning"
           />
           <CreativeProjectItem
-            title="Tech for better project"
-            techForBetterProject={techForBetterProject}
+            title="Binge Pad App"
+            backgroundImg={bingePad}
             projectUrl="https://github.com/fac24/alis-learning"
           />
           <CreativeProjectItem
-            title="Tech for better project"
-            techForBetterProject={techForBetterProject}
+            title="PJS Pokedex"
+            backgroundImg={pokedex}
             projectUrl="https://github.com/fac24/alis-learning"
           />
           <CreativeProjectItem
-            title="Tech for better project"
-            techForBetterProject={techForBetterProject}
+            title="Sheldonia App"
+            backgroundImg={sheldonia}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
+          <CreativeProjectItem
+            title="VED Agency"
+            backgroundImg={techAgency}
+            projectUrl="https://github.com/fac24/alis-learning"
+          />
+          <CreativeProjectItem
+            title="Animated Dancing Broccoli"
+            backgroundImg={broccoliAnimation}
             projectUrl="https://github.com/fac24/alis-learning"
           />
         </ContainerCarryingMyBuiltProjects>
