@@ -3,24 +3,23 @@ import Image from "next/image";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
-import techForBetterProject from "../public/assets/Projects/alis-learning-project.png";
 
-const CreativeProjectItem = () => {
+const CreativeProjectItem = ({ title, backgroundImg, projectUrl }) => {
   return (
     <DevelopmentProject className="group">
       <Image
         className="rounded-xl group-hover:opacity-10"
-        src={techForBetterProject}
+        src={backgroundImg}
         alt="/"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-2xl text-white tracking-wider text-center">
-          Alis Learning
+          {title}
         </h3>
         <p className="pb-4 pt-2 text-white text-center">Next.js React</p>
-        <Link href="/">
+        <Link href={projectUrl}>
           <p className="text-center py-3 rounded-lg bg-white text-yellow-500 font-bold text-lg cursor-pointer">
-            An interactive app that helps dyslexic children read and write
+            Click to view work
           </p>
         </Link>
       </div>
