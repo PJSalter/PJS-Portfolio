@@ -98,10 +98,6 @@ const ContainerCarryingMyBuiltProjects = styled.div`
   ${tw`grid md:grid-cols-2 gap-8`}
 `;
 
-// const MyTitleForProjects = styled.div`
-//   ${tw`text-xl tracking-widest uppercase text-[]`}
-// `;
-
 const MyTitleForProjects = styled.p`
   background: linear-gradient(
     to right,
