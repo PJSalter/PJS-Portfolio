@@ -9,6 +9,7 @@ const CreativeProjectItem = ({
   backgroundImg,
   projectUrl,
   subTitle,
+  Desc,
 }) => {
   return (
     <DevelopmentProject className="group">
@@ -21,6 +22,7 @@ const CreativeProjectItem = ({
         <h3 className="text-2xl text-white tracking-wider text-center">
           {title}
         </h3>
+        <p className="pb-4 pt-2 text-white text-center">{Desc}</p>
         <p className="pb-4 pt-2 text-white text-center">{subTitle}</p>
         <Link href={projectUrl}>
           <p className="text-center py-3 rounded-lg bg-white text-yellow-500 font-bold text-lg cursor-pointer">
