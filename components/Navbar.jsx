@@ -89,11 +89,13 @@ const Navbar = () => {
                 <AiOutlineClose />
               </RoundedShadowStyling>
             </TopSideDrawMenuStyling>
-            <div css={tw`md:hidden border-b border-b-pink-700 my-4`}>
+            <HiddenMobileViewNavArea
+              css={tw`md:hidden border-b border-b-pink-700 my-4`}
+            >
               <p css={tw`w-[85%] md:w-[90%] py-4`}>
                 Building my first awesome coding portfolio
               </p>
-            </div>
+            </HiddenMobileViewNavArea>
           </div>
           <MobileMenuWrap>
             <ul css={tw`uppercase`}>
@@ -138,6 +140,14 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+const HiddenMobileViewNavArea = styled.div`
+  // for small mobile screens.
+  @media only screen and (max-width: 369px) {
+    opacity: 0;
+    display: none;
+  }
+`;
 
 const StyledDivForNavbar = styled.div`
   ${tw`fixed w-full h-20 shadow-xl z-[100]`}
@@ -187,6 +197,7 @@ cursor-pointer
 hover:scale-105
 ease-in
 duration-300
+// opacity-0
 `;
 
 const MobileMenuWrap = styled.div`
@@ -209,5 +220,5 @@ md:drop-shadow-xl
 `;
 
 const ConnectWrap = styled.div`
-  ${tw`flex items-center justify-between my-4 w-full sm:w-[80%]`}
+  ${tw`flex items-center justify-between my-4 w-full sm:w-[80%] opacity-0`}
 `;
