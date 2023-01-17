@@ -25,52 +25,61 @@ const MyProjects = () => {
           <CreativeProjectItem
             title="Tech for better project"
             backgroundImg={techForBetterProject}
-            subTitle="Next.js React JS and deployed on Netlify"
+            subTitle="Next.js, React, JavaScript, Styled Components and deployed on Netlify"
             projectUrl="https://github.com/fac24/alis-learning"
           />
           <CreativeProjectItem
             title="Art therapy App"
             backgroundImg={paintboxApp}
+            subTitle="Next.js, React, JavaScript, Cypress for testing, Supabase, Styled Components and deployed on Vercel"
             projectUrl="https://github.com/fac24/paintbox"
           />
           <CreativeProjectItem
             title="Little Garden App"
             backgroundImg={gardenShop}
+            subTitle="Next.js, React, JavaScript, CSS, PostgreSQL and deployed on Vercel"
             projectUrl="https://github.com/fac24/week6-asmahan-hallie-peter-maria"
           />
           <CreativeProjectItem
             title="Broccoli Game"
             backgroundImg={reactGame}
+            subTitle="React, JavaScript, CSS and deployed on Netlify"
             projectUrl="https://github.com/fac24/week-5-Peter-Hussain"
           />
           <CreativeProjectItem
             title="Rainbow themed tic tac toe game"
             backgroundImg={RainbowTicTacToe}
+            subTitle="Next.js, React, TypeScript, Styled Components and deployed on Netlify"
             projectUrl="https://github.com/PJSalter/pjs-tic-tac-toe"
           />
           <CreativeProjectItem
             title="Binge Pad App"
             backgroundImg={bingePad}
+            subTitle="HTML, CSS, JavaScript"
             projectUrl="https://github.com/AsmahanM/FAC-To-Do-Project"
           />
           <CreativeProjectItem
             title="PJS Pokedex"
             backgroundImg={pokedex}
+            subTitle="HTML, CSS, JavaScript"
             projectUrl="https://github.com/PJSalter/pjs-pokedex-gaming-api"
           />
           <CreativeProjectItem
             title="Sheldonia App"
             backgroundImg={sheldonia}
+            subTitle="HTML, CSS, JavaScript"
             projectUrl="https://github.com/PJSalter/Http-App-Project"
           />
           <CreativeProjectItem
             title="VED Agency"
             backgroundImg={techAgency}
+            subTitle="HTML, CSS, JavaScript"
             projectUrl="https://github.com/sonianb/agency-website"
           />
           <CreativeProjectItem
             title="Animated Dancing Broccoli"
             backgroundImg={broccoliAnimation}
+            subTitle="HTML, CSS, JavaScript"
             projectUrl="https://github.com/PJSalter/Dancing-Broccoli"
           />
         </ContainerCarryingMyBuiltProjects>
