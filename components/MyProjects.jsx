@@ -53,7 +53,7 @@ const MyProjects = () => {
           <CreativeProjectItem
             title="Rainbow themed tic tac toe game"
             backgroundImg={RainbowTicTacToe}
-            Desc="A strategic battle by two users going head to head, who will win, both users will choose 'O' OR 'X' from one square within a grid layout of nine squares. The user who gets three similar symbols in a row will win the game. If no player wins then game ends with a draw."
+            Desc="A strategic battle by two users going head to head, each will choose 'O' OR 'X' from one square from the playing board. first player to get three in a row wins, else it'll be a draw."
             subTitle="Next.js, React, TypeScript, Styled Components and deployed on Netlify"
             projectUrl="https://github.com/PJSalter/pjs-tic-tac-toe"
           />
