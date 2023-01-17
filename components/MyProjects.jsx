@@ -71,7 +71,7 @@ const MyProjects = () => {
           <CreativeProjectItem
             title="Animated Dancing Broccoli"
             backgroundImg={broccoliAnimation}
-            projectUrl="https://github.com/fac24/alis-learning"
+            projectUrl="https://github.com/PJSalter/Dancing-Broccoli"
           />
         </ContainerCarryingMyBuiltProjects>
       </ProjectSectionContainer>
