@@ -19,15 +19,19 @@ const CreativeProjectItem = ({
         alt="/"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="text-2xl text-white tracking-wider text-center">
+        <TitleOfAwesomeWork className="text-2xl text-white tracking-wider text-center">
           {title}
-        </h3>
-        <p className="pb-4 pt-2 text-white text-center">{Desc}</p>
-        <p className="pb-4 pt-2 text-white text-center">{subTitle}</p>
+        </TitleOfAwesomeWork>
+        <ProjectDescription className="pb-4 pt-2 text-white text-center">
+          {Desc}
+        </ProjectDescription>
+        <TechStackInfo className="pb-4 pt-2 text-white text-center">
+          {subTitle}
+        </TechStackInfo>
         <Link href={projectUrl}>
-          <p className="text-center py-3 rounded-lg bg-white text-yellow-500 font-bold text-lg cursor-pointer">
+          <TextLink className="text-center py-3 rounded-lg bg-white text-yellow-500 font-bold text-lg cursor-pointer">
             Click to view work
-          </p>
+          </TextLink>
         </Link>
       </div>
     </DevelopmentProject>
@@ -38,4 +42,32 @@ export default CreativeProjectItem;
 
 const DevelopmentProject = styled.div`
   ${tw`relative flex items-center justify-center h-auto w-full shadow-xl shadow-[#9892B1] rounded-xl p-4 hover:bg-gradient-to-r from-[#5651e5] to-cyan-900`}
+`;
+
+const ProjectDescription = styled.p`
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 0.5rem;
+  }
+`;
+
+const TechStackInfo = styled.p`
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 0.5rem;
+  }
+`;
+
+const TitleOfAwesomeWork = styled.h3`
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
+`;
+
+const TextLink = styled.h3`
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 0.5rem;
+  }
 `;
