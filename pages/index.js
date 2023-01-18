@@ -7,6 +7,7 @@ import Navbar from "../components/NavBar";
 import AboutMe from "../components/AboutMe";
 import FrontPresentedPage from "../components/FrontPresentedPage";
 import MySkills from "../components/MySkills";
+import MyProjects from "../components/MyProjects";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <FrontPresentedPage />
         <AboutMe />
         <MySkills />
+        <MyProjects />
       </MainStyle>
       <ConditionalButton switchStyle={false}>Press Me</ConditionalButton>
     </div>

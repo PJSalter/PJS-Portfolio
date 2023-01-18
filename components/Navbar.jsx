@@ -84,16 +84,18 @@ const Navbar = () => {
               </StyleBorder>
               <RoundedShadowStyling
                 onClick={handleNavbarMenu}
-                className="shadow-lg shadow-sky-900"
+                className="shadow-lg shadow-sky-900 ml-4"
               >
                 <AiOutlineClose />
               </RoundedShadowStyling>
             </TopSideDrawMenuStyling>
-            <div css={tw`md:hidden border-b border-b-pink-700 my-4`}>
+            <HiddenMobileViewNavArea
+              css={tw`md:hidden border-b border-b-pink-700 my-4`}
+            >
               <p css={tw`w-[85%] md:w-[90%] py-4`}>
                 Building my first awesome coding portfolio
               </p>
-            </div>
+            </HiddenMobileViewNavArea>
           </div>
           <MobileMenuWrap>
             <ul css={tw`uppercase`}>
@@ -113,7 +115,7 @@ const Navbar = () => {
                 <li css={tw`py-4 text-sm`}>Contact</li>
               </Link>
             </ul>
-            <div css={tw`pt-40`}>
+            <div css={tw`pt-4`}>
               <ConnectTextStyle>Connect with me</ConnectTextStyle>
               <ConnectWrap>
                 <ConnectButtonStyle className="shadow-lg shadow-sky-900">
@@ -138,6 +140,22 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+const HiddenMobileViewNavArea = styled.div`
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    opacity: 1;
+    // display: none;
+    font-size: 0.8rem;
+    // background: rgb(244, 249, 114);
+    // background: radial-gradient(
+    //   circle,
+    //   rgba(244, 249, 114, 1) 0%,
+    //   rgba(171, 148, 233, 1) 100%
+    // );
+    // border-radius: 25px;
+  }
+`;
 
 const StyledDivForNavbar = styled.div`
   ${tw`fixed w-full h-20 shadow-xl z-[100]`}
@@ -194,7 +212,7 @@ const MobileMenuWrap = styled.div`
 `;
 
 const ConnectTextStyle = styled.p`
-  ${tw`uppercase tracking-widest text-pink-700`}
+  ${tw`uppercase tracking-widest text-pink-700 text-xs`}
 `;
 
 const ConnectButtonStyle = tw.div`

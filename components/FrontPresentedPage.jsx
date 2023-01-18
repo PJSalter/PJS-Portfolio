@@ -11,7 +11,7 @@ const FrontPresentedPage = () => {
     <div css={tw`w-full h-screen text-center`}>
       <RainbowTitle>Welcome to PJS-Coder-Portfolio</RainbowTitle>
 
-      <p css={tw`text-lg`}>
+      <QuoteStyling css={tw`text-lg`}>
         <q>
           <i>
             Creativity and technology I believe go hand in hand. It is
@@ -19,8 +19,8 @@ const FrontPresentedPage = () => {
             never go wrong with an artistic yet professional front end!
           </i>
         </q>
-      </p>
-      <h2 css={tw`py-4 text-pink-600 text-6xl`}>
+      </QuoteStyling>
+      <IntroductionStyle css={tw`py-4 text-pink-600 text-6xl`}>
         Hello Everyone &#128075;
         <div className="[word-spacing:0.1rem]">
           I&apos;m
@@ -30,7 +30,7 @@ const FrontPresentedPage = () => {
           <br></br>
           <br></br>A Software Developer
         </div>
-      </h2>
+      </IntroductionStyle>
       <HomePageContainer>
         <ConnectWrap>
           <a
@@ -102,6 +102,25 @@ const RainbowTitle = styled.h1`
   line-height: 1.15;
   font-size: 4rem;
   padding: 5%;
+
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+`;
+
+const QuoteStyling = styled.p`
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+
+const IntroductionStyle = styled.h2`
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 0.5rem;
+  }
 `;
 
 const HomePageContainer = tw.div`
