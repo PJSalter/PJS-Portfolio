@@ -20,7 +20,7 @@ const FrontPresentedPage = () => {
           </i>
         </q>
       </QuoteStyling>
-      <h2 css={tw`py-4 text-pink-600 text-6xl`}>
+      <IntroductionStyle css={tw`py-4 text-pink-600 text-6xl`}>
         Hello Everyone &#128075;
         <div className="[word-spacing:0.1rem]">
           I&apos;m
@@ -30,7 +30,7 @@ const FrontPresentedPage = () => {
           <br></br>
           <br></br>A Software Developer
         </div>
-      </h2>
+      </IntroductionStyle>
       <HomePageContainer>
         <ConnectWrap>
           <a
@@ -113,6 +113,13 @@ const QuoteStyling = styled.p`
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
     font-size: 1rem;
+  }
+`;
+
+const IntroductionStyle = styled.h2`
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 0.5rem;
   }
 `;
 
