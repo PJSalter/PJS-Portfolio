@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import pic from "../public/assets/pjs-software-developer.png";
 import styled from "styled-components";
@@ -8,17 +8,30 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = (background = "black") => {
   // set the useSate to a default of false
   const [navbar, setNavbar] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   // function to handle toggling my menu
   const handleNavbarMenu = () => {
     // when every I run this function I will want it to set as true.
     setNavbar(!navbar);
   };
+
+  // this useEffect hook will only run once
+  useEffect(() => {
+    const manageShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+      window.addEventListener("scroll", manageShadow);
+    };
+  }, [shadow]);
   return (
-    <StyledDivForNavbar>
+    <StyledDivForNavbar className={shadow}>
       <NavContainer>
         <div css={tw`w-16 h-16 mb-1 object-left-top`}>
           <Image
@@ -158,7 +171,10 @@ const HiddenMobileViewNavArea = styled.div`
 `;
 
 const StyledDivForNavbar = styled.div`
-  ${tw`fixed w-full h-20 shadow-xl z-[100]`}
+  ${(shadow) =>
+    shadow
+      ? tw`fixed w-full h-20 shadow-xl z-[100]`
+      : tw`fixed w-full h-20 z-[100]`}
 `;
 
 const NavContainer = styled.div`
