@@ -26,7 +26,6 @@ export default function Home() {
         <MyProjects />
         <Contact />
       </MainStyle>
-      <ConditionalButton switchStyle={false}>Press Me</ConditionalButton>
     </div>
   );
 }
@@ -40,18 +39,3 @@ const MainStyle = styled.main`
   justify-content: center;
   align-items: center;
 `;
-
-const ConditionalButton = styled.button(({ switchStyle }) => [
-  switchStyle
-    ? tw`bg-[#581c87] hover:bg-[#f43f5e]`
-    : tw`bg-[#0d9488] hover:bg-[#164e63]`,
-  tw`
-    text-slate-50
-    font-bold
-    py-2
-    px-4
-    border
-    border-black
-    rounded
-    `,
-]);
