@@ -8,7 +8,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = (background = "black") => {
   // set the useSate to a default of false
   const [navbar, setNavbar] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -29,9 +29,9 @@ const Navbar = () => {
       }
       window.addEventListener("scroll", manageShadow);
     };
-  }, []);
+  }, [shadow]);
   return (
-    <StyledDivForNavbar>
+    <StyledDivForNavbar className={shadow}>
       <NavContainer>
         <div css={tw`w-16 h-16 mb-1 object-left-top`}>
           <Image
@@ -171,7 +171,10 @@ const HiddenMobileViewNavArea = styled.div`
 `;
 
 const StyledDivForNavbar = styled.div`
-  ${tw`fixed w-full h-20 shadow-xl z-[100]`}
+  ${(shadow) =>
+    shadow
+      ? tw`fixed w-full h-20 shadow-xl z-[100]`
+      : tw`fixed w-full h-20 z-[100]`}
 `;
 
 const NavContainer = styled.div`
