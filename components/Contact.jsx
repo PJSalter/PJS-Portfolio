@@ -65,6 +65,22 @@ const Contact = () => {
               </div>
             </div>
           </LeftSideContent>
+
+          <RightSideContent>
+            <div className="p-4">
+              <form>
+                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                  <div className="flex flex-col">
+                    <label className="uppercase text-sm py-2">Name</label>
+                    <input
+                      className="border-2 rounded-lg p-3 flex border-purple-500"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </RightSideContent>
         </GridSystem>
       </div>
     </div>
@@ -116,4 +132,8 @@ duration-500
 hover:shadow-inner
 md:drop-shadow-xl
 bg-pink-400
+`;
+
+const RightSideContent = styled.div`
+  ${tw`col-span-3 w-full h-auto shadow-xl bg-green-200 rounded-xl lg:p-4`}
 `;
