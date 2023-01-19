@@ -94,6 +94,20 @@ const Contact = () => {
                     type="email"
                   />
                 </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2">Subject</label>
+                  <input
+                    className="border-2 rounded-lg p-3 flex border-purple-500"
+                    type="text"
+                  />
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2">Message</label>
+                  <textarea
+                    className="border-2 rounded-lg p-3 border-purple-500"
+                    rows="12"
+                  ></textarea>
+                </div>
               </form>
             </div>
           </RightSideContent>
