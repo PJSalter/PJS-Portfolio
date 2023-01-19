@@ -11,6 +11,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 const Navbar = () => {
   // set the useSate to a default of false
   const [navbar, setNavbar] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   // function to handle toggling my menu
   const handleNavbarMenu = () => {
