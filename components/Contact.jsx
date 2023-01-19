@@ -26,7 +26,7 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="py-2">Peter James Salter</h2>
-                <p>Full Stack Developer</p>
+                <p>Software Developer</p>
                 <p className="py-4">
                   I am available for full-time positions and freelance. Drop me
                   a Message.
@@ -108,13 +108,20 @@ const Contact = () => {
                     rows="17"
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-pink-900 shadow-xl shadow-yellow-400 bg-pink-400 border-2 rounded-xl border-pink-900">
+                <ButtonStyle className="shadow-xl shadow-yellow-400">
                   Send Message
-                </button>
+                </ButtonStyle>
               </form>
             </div>
           </RightSideContent>
         </GridSystem>
+        <div className="flex justify-center py-12">
+          <Link href="/">
+            <ConditionalButton switchStyle={false}>
+              Back to the top
+            </ConditionalButton>
+          </Link>
+        </div>
       </div>
     </div>
   );
@@ -170,3 +177,22 @@ bg-pink-400
 const RightSideContent = styled.div`
   ${tw`col-span-3 w-full h-auto shadow-xl bg-green-200 rounded-xl lg:p-4`}
 `;
+
+const ButtonStyle = styled.button`
+  ${tw`w-full p-4 text-pink-900 bg-pink-400 border-2 rounded-xl border-pink-900 mt-4`}
+`;
+
+const ConditionalButton = styled.button(({ switchStyle }) => [
+  switchStyle
+    ? tw`bg-[#581c87] hover:bg-[#f43f5e]`
+    : tw`bg-[#0d9488] hover:bg-[#164e63]`,
+  tw`
+      text-slate-50
+      font-bold
+      py-2
+      px-4
+      border
+      border-black
+      rounded-full
+      `,
+]);
