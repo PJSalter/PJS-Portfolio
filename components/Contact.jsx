@@ -77,6 +77,22 @@ const Contact = () => {
                       type="text"
                     />
                   </div>
+                  <div className="flex flex-col">
+                    <label className="uppercase text-sm py-2">
+                      Telephone Number
+                    </label>
+                    <input
+                      className="border-2 rounded-lg p-3 flex border-purple-500"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label className="uppercase text-sm py-2">Email</label>
+                  <input
+                    className="border-2 rounded-lg p-3 flex border-purple-500"
+                    type="email"
+                  />
                 </div>
               </form>
             </div>
