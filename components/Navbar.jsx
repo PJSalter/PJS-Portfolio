@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import pic from "../public/assets/pjs-software-developer.png";
 import styled from "styled-components";
@@ -18,6 +18,18 @@ const Navbar = () => {
     // when every I run this function I will want it to set as true.
     setNavbar(!navbar);
   };
+
+  // this useEffect hook will only run once
+  useEffect(() => {
+    const manageShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+      window.addEventListener("scroll", manageShadow);
+    };
+  }, []);
   return (
     <StyledDivForNavbar>
       <NavContainer>
