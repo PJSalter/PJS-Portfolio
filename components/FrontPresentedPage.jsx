@@ -68,7 +68,7 @@ const FrontPresentedPage = () => {
 export default FrontPresentedPage;
 
 const ConnectWrap = styled.div`
-  ${tw`flex items-center justify-between w-full max-w-[330px] m-auto py-4`}
+  ${tw`flex items-center justify-evenly lg:justify-between w-full max-w-[330px] m-auto py-4`}
 `;
 
 const AboutConnectButtonStyle = tw.div`
