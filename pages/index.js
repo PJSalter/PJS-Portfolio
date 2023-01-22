@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
-// import tw from "twin.macro";
 import Navbar from "../components/NavBar";
 import AboutMe from "../components/AboutMe";
 import FrontPresentedPage from "../components/FrontPresentedPage";
