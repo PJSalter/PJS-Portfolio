@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import pic from "../assets/pjs-software-developer.png";
+import LogoFun from "../assets/pjs-software-developer.png";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
@@ -36,7 +36,7 @@ const Navbar = () => {
         <div css={tw`w-16 h-16 mb-1 object-left-top`}>
           <Image
             // src="/assets/pjs-software-developer.png"
-            src={pic}
+            src={LogoFun}
             alt="pjs-logo-top"
             placeholder="art"
             width={150}
@@ -88,7 +88,7 @@ const Navbar = () => {
               <StyleBorder>
                 <Image
                   // src="/assets/pjs-software-developer.png"
-                  src={pic}
+                  src={LogoFun}
                   alt="pjs-logo"
                   width={150}
                   height={150}
