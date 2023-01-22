@@ -13,7 +13,7 @@ const Contact = () => {
     <div className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <ContactMeTitle>Contact</ContactMeTitle>
-        <h2 className="py-4">Get in Touch</h2>
+        <h2 className="py-4 text-lg">Get in Touch</h2>
         <GridSystem>
           <LeftSideContent>
             <div className="lg:p-4 h-full rounded-xl">
@@ -148,6 +148,12 @@ const ContactMeTitle = styled.p`
   line-height: 1.15;
   font-size: 4rem;
   padding: 5%;
+
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
 `;
 
 const GridSystem = styled.div`

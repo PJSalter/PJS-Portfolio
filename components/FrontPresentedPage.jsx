@@ -11,7 +11,7 @@ const FrontPresentedPage = () => {
     <div css={tw`w-full h-screen text-center`}>
       <RainbowTitle>Welcome to PJS-Coder-Portfolio</RainbowTitle>
 
-      <QuoteStyling css={tw`text-lg`}>
+      <QuoteStyling css={tw`text-xs lg:text-lg p-4`}>
         <q>
           <i>
             Creativity and technology I believe go hand in hand. It is
@@ -20,7 +20,7 @@ const FrontPresentedPage = () => {
           </i>
         </q>
       </QuoteStyling>
-      <IntroductionStyle css={tw`py-4 text-pink-600 text-6xl`}>
+      <IntroductionStyle css={tw`py-4 text-pink-600 text-lg lg:text-6xl`}>
         Hello Everyone &#128075;
         <div className="[word-spacing:0.1rem]">
           I&apos;m
@@ -68,12 +68,13 @@ const FrontPresentedPage = () => {
 export default FrontPresentedPage;
 
 const ConnectWrap = styled.div`
-  ${tw`flex items-center justify-between w-full max-w-[330px] m-auto py-4`}
+  ${tw`flex items-center justify-evenly lg:justify-between w-full max-w-[330px] m-auto py-4`}
 `;
 
 const AboutConnectButtonStyle = tw.div`
 rounded-full
-p-6
+p-4
+lg:p-6
 cursor-pointer
 hover:scale-110
 ease-in
@@ -105,7 +106,8 @@ const RainbowTitle = styled.h1`
 
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    margin-top: 10px;
   }
 `;
 

@@ -49,6 +49,12 @@ const RainbowTitle = styled.h1`
   line-height: 1.15;
   font-size: 4rem;
   padding: 5%;
+
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
 `;
 
 const AboutContainer = tw.div`
@@ -64,8 +70,9 @@ items-center
 
 const BioAboutMe = tw.p`
 py-4
+m-auto
 text-purple-900
 max-w-[70%]
-text-xl
-m-auto
+text-xs
+xl:text-xl
 `;

@@ -20,7 +20,7 @@ const MyProjects = () => {
     <div className="w-full">
       <ProjectSectionContainer>
         <MyTitleForProjects>Projects</MyTitleForProjects>
-        <h2 className="py-4">What I have built</h2>
+        <h2 className="py-4 text-lg">What I have built</h2>
         <ContainerCarryingMyBuiltProjects>
           <CreativeProjectItem
             title="Tech for better project - Alis Learning"
@@ -127,4 +127,10 @@ const MyTitleForProjects = styled.p`
   line-height: 1.15;
   font-size: 4rem;
   padding: 5%;
+
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
 `;
