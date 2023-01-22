@@ -49,6 +49,12 @@ const RainbowTitle = styled.h1`
   line-height: 1.15;
   font-size: 4rem;
   padding: 5%;
+
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
 `;
 
 const AboutContainer = tw.div`
