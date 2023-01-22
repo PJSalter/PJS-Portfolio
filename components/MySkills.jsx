@@ -24,7 +24,7 @@ const MySkills = () => {
     <div css={tw`w-full lg:h-screen p-2`}>
       <SkillsContainer>
         <RainbowTitle>My Tech Skills</RainbowTitle>
-        <h3 css={tw`py-4`}>What I can do</h3>
+        <h3 css={tw`py-4 text-lg`}>What I can do</h3>
         <Grid>
           <div
             css={tw`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300`}
