@@ -11,7 +11,7 @@ const FrontPresentedPage = () => {
     <div css={tw`w-full h-screen text-center`}>
       <RainbowTitle>Welcome to PJS-Coder-Portfolio</RainbowTitle>
 
-      <QuoteStyling css={tw`text-xs lg:text-lg`}>
+      <QuoteStyling css={tw`text-xs lg:text-lg p-4`}>
         <q>
           <i>
             Creativity and technology I believe go hand in hand. It is
@@ -106,7 +106,8 @@ const RainbowTitle = styled.h1`
 
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    margin-top: 10px;
   }
 `;
 
