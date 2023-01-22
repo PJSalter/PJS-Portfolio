@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import pic from "../public/assets/pjs-software-developer.png";
+// import pic from "../public/assets/pjs-software-developer.png";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const Navbar = (background = "black") => {
+const Navbar = () => {
   // set the useSate to a default of false
   const [navbar, setNavbar] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -35,8 +35,8 @@ const Navbar = (background = "black") => {
       <NavContainer>
         <div css={tw`w-16 h-16 mb-1 object-left-top`}>
           <Image
-            // src="/pjs-software-developer.png"
-            src={pic}
+            src="../public/assets/pjs-software-developer.png"
+            // src={pic}
             alt="pjs-logo-top"
             placeholder="art"
             width={150}
@@ -87,8 +87,8 @@ const Navbar = (background = "black") => {
             <TopSideDrawMenuStyling>
               <StyleBorder>
                 <Image
-                  // src="/pjs-software-developer.png"
-                  src={pic}
+                  src="../public/assets/pjs-software-developer.png"
+                  // src={pic}
                   alt="pjs-logo"
                   width={150}
                   height={150}
