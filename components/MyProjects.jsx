@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
-import Image from "next/image";
 import tw from "twin.macro";
 import CreativeProjectItem from "../components/CreativeProjectItem.jsx";
 import techForBetterProject from "../public/assets/Projects/alislearninggg.png";
