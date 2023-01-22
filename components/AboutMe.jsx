@@ -64,8 +64,9 @@ items-center
 
 const BioAboutMe = tw.p`
 py-4
+m-auto
 text-purple-900
 max-w-[70%]
-text-xl
-m-auto
+text-xs
+xl:text-xl
 `;
