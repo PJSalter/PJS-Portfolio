@@ -20,7 +20,7 @@ const MyProjects = () => {
     <div className="w-full">
       <ProjectSectionContainer>
         <MyTitleForProjects>Projects</MyTitleForProjects>
-        <h2 className="py-4">What I have built</h2>
+        <h2 className="py-4 text-lg">What I have built</h2>
         <ContainerCarryingMyBuiltProjects>
           <CreativeProjectItem
             title="Tech for better project - Alis Learning"
