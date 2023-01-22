@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import LogoFun from "../assets/pjs-software-developer.png";
+import LogoFun from "../public/assets/pjs-software-developer.png";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
