@@ -35,7 +35,7 @@ const Navbar = () => {
       <NavContainer>
         <div css={tw`w-16 h-16 mb-1 object-left-top`}>
           <Image
-            src="../public/assets/pjs-software-developer.png"
+            src="/assets/pjs-software-developer.png"
             // src={pic}
             alt="pjs-logo-top"
             placeholder="art"
@@ -87,7 +87,7 @@ const Navbar = () => {
             <TopSideDrawMenuStyling>
               <StyleBorder>
                 <Image
-                  src="../public/assets/pjs-software-developer.png"
+                  src="/assets/pjs-software-developer.png"
                   // src={pic}
                   alt="pjs-logo"
                   width={150}
