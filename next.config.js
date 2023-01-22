@@ -11,7 +11,7 @@ const nextConfig = {
         pathname: "/image/upload/**",
       },
     ],
-    path: "/",
+    path: "/_next/image",
     disableStaticImages: false,
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: false,
