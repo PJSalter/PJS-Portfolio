@@ -8,7 +8,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const Navbar = (background = "black") => {
+const Navbar = () => {
   // set the useSate to a default of false
   const [navbar, setNavbar] = useState(false);
   const [shadow, setShadow] = useState(false);
