@@ -115,19 +115,29 @@ const Navbar = () => {
           <MobileMenuWrap>
             <ul css={tw`uppercase`}>
               <Link href="/">
-                <li css={tw`py-4 text-sm`}>Home</li>
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  Home
+                </li>
               </Link>
               <Link href="/#about">
-                <li css={tw`py-4 text-sm`}>About</li>
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  About
+                </li>
               </Link>
               <Link href="/#skills">
-                <li css={tw`py-4 text-sm`}>Skills</li>
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  Skills
+                </li>
               </Link>
               <Link href="/#projects">
-                <li css={tw`py-4 text-sm`}>Projects</li>
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  Projects
+                </li>
               </Link>
               <Link href="/#contact">
-                <li css={tw`py-4 text-sm`}>Contact</li>
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  Contact
+                </li>
               </Link>
             </ul>
             <div css={tw`pt-4`}>
