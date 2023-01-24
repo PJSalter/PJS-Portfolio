@@ -15,7 +15,7 @@ import pokedex from "../public/assets/Projects/pokedex.png";
 
 const MyProjects = () => {
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full">
       <ProjectSectionContainer>
         <MyTitleForProjects>Projects</MyTitleForProjects>
         <h2 className="py-4 text-lg">What I have built</h2>
