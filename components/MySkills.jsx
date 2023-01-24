@@ -21,7 +21,7 @@ import JestTesting from ".//../public/assets/Skills/jest.png";
 
 const MySkills = () => {
   return (
-    <div css={tw`w-full lg:h-screen p-2`}>
+    <div id="skills" css={tw`w-full lg:h-screen p-2`}>
       <SkillsContainer>
         <RainbowTitle>My Tech Skills</RainbowTitle>
         <h3 css={tw`py-4 text-lg`}>What I can do</h3>

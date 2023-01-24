@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const FrontPresentedPage = () => {
   return (
-    <div css={tw`w-full h-screen text-center`}>
+    <div id="home" css={tw`w-full h-screen text-center`}>
       <RainbowTitle>Welcome to PJS-Coder-Portfolio</RainbowTitle>
 
       <QuoteStyling css={tw`text-xs lg:text-lg p-4`}>

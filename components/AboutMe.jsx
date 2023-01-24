@@ -5,7 +5,7 @@ import tw from "twin.macro";
 const AboutMe = () => {
   return (
     <>
-      <div css={tw`w-full h-screen text-center`}>
+      <div id="about" css={tw`w-full h-screen text-center`}>
         <RainbowTitle>My Journey</RainbowTitle>
         <AboutContainer>
           <BioAboutMe>
