@@ -86,14 +86,16 @@ const Navbar = () => {
           <div>
             <TopSideDrawMenuStyling>
               <StyleBorder>
-                <Image
-                  // src="/assets/pjs-software-developer.png"
-                  src={LogoFun}
-                  alt="pjs-logo"
-                  width={150}
-                  height={150}
-                  placeholder="art"
-                />
+                <Link href="/">
+                  <Image
+                    // src="/assets/pjs-software-developer.png"
+                    src={LogoFun}
+                    alt="pjs-logo"
+                    width={150}
+                    height={150}
+                    placeholder="art"
+                  />
+                </Link>
               </StyleBorder>
               <RoundedShadowStyling
                 onClick={handleNavbarMenu}
@@ -113,19 +115,29 @@ const Navbar = () => {
           <MobileMenuWrap>
             <ul css={tw`uppercase`}>
               <Link href="/">
-                <li css={tw`py-4 text-sm`}>Home</li>
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  Home
+                </li>
               </Link>
-              <Link href="/">
-                <li css={tw`py-4 text-sm`}>About</li>
+              <Link href="/#about">
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  About
+                </li>
               </Link>
-              <Link href="/">
-                <li css={tw`py-4 text-sm`}>Skills</li>
+              <Link href="/#skills">
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  Skills
+                </li>
               </Link>
-              <Link href="/">
-                <li css={tw`py-4 text-sm`}>Projects</li>
+              <Link href="/#projects">
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  Projects
+                </li>
               </Link>
-              <Link href="/">
-                <li css={tw`py-4 text-sm`}>Contact</li>
+              <Link href="/#contact">
+                <li onClick={() => setNavbar(false)} css={tw`py-4 text-sm`}>
+                  Contact
+                </li>
               </Link>
             </ul>
             <div css={tw`pt-4`}>
