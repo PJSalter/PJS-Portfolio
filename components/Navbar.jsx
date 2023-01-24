@@ -86,14 +86,16 @@ const Navbar = () => {
           <div>
             <TopSideDrawMenuStyling>
               <StyleBorder>
-                <Image
-                  // src="/assets/pjs-software-developer.png"
-                  src={LogoFun}
-                  alt="pjs-logo"
-                  width={150}
-                  height={150}
-                  placeholder="art"
-                />
+                <Link href="/">
+                  <Image
+                    // src="/assets/pjs-software-developer.png"
+                    src={LogoFun}
+                    alt="pjs-logo"
+                    width={150}
+                    height={150}
+                    placeholder="art"
+                  />
+                </Link>
               </StyleBorder>
               <RoundedShadowStyling
                 onClick={handleNavbarMenu}
