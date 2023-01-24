@@ -8,7 +8,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#C3B1E1] text-[#900C3F] tracking-wide;
+    @apply bg-[#f2defb] text-[#900C3F] tracking-wide;
   }
 
   /* font to be bold */
