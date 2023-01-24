@@ -40,7 +40,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
+                    <AboutConnectButtonStyle className="shadow-lg shadow-[#64a25a]">
                       <FaLinkedinIn />
                     </AboutConnectButtonStyle>
                   </a>
@@ -49,16 +49,16 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
+                    <AboutConnectButtonStyle className="shadow-lg shadow-[#64a25a]">
                       <FaGithub />
                     </AboutConnectButtonStyle>
                   </a>
                   <Link href="mailto:psalter88@googlemail.com">
-                    <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
+                    <AboutConnectButtonStyle className="shadow-lg shadow-[#64a25a]">
                       <AiOutlineMail />
                     </AboutConnectButtonStyle>
                   </Link>
-                  <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
+                  <AboutConnectButtonStyle className="shadow-lg shadow-[#64a25a]">
                     <BsFillPersonLinesFill />
                   </AboutConnectButtonStyle>
                 </ConnectWrap>
@@ -108,7 +108,7 @@ const Contact = () => {
                     rows="17"
                   ></textarea>
                 </div>
-                <ButtonStyle className="shadow-xl shadow-yellow-400">
+                <ButtonStyle className="shadow-xl shadow-[#64a25a]">
                   Send Message
                 </ButtonStyle>
               </form>
@@ -161,7 +161,7 @@ const GridSystem = styled.div`
 `;
 
 const LeftSideContent = styled.div`
-  ${tw`col-span-3 lg:col-span-2 w-full h-full shadow-xl bg-green-200 rounded-xl p-4`}
+  ${tw`col-span-3 lg:col-span-2 w-full h-full shadow-xl bg-[#e2fbde] rounded-xl p-4`}
 `;
 
 const ConnectWrap = styled.div`
@@ -181,7 +181,7 @@ bg-pink-400
 `;
 
 const RightSideContent = styled.div`
-  ${tw`col-span-3 w-full h-auto shadow-xl bg-green-200 rounded-xl lg:p-4`}
+  ${tw`col-span-3 w-full h-auto shadow-xl bg-[#e2fbde] rounded-xl lg:p-4`}
 `;
 
 const ButtonStyle = styled.button`
