@@ -7,6 +7,7 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+// import cv from "../assets/PJSCV.pdf";
 
 const Navbar = () => {
   // set the useSate to a default of false
@@ -152,9 +153,11 @@ const Navbar = () => {
                 <ConnectButtonStyle className="shadow-lg shadow-sky-900">
                   <AiOutlineMail />
                 </ConnectButtonStyle>
-                <ConnectButtonStyle className="shadow-lg shadow-sky-900">
-                  <BsFillPersonLinesFill />
-                </ConnectButtonStyle>
+                <a href="../assets/PJSCV.pdf" target="_blank" rel="noreferrer">
+                  <ConnectButtonStyle className="shadow-lg shadow-sky-900">
+                    <BsFillPersonLinesFill />
+                  </ConnectButtonStyle>
+                </a>
               </ConnectWrap>
             </div>
           </MobileMenuWrap>
