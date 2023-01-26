@@ -68,44 +68,61 @@ const Contact = () => {
 
           <RightSideContent>
             <div className="p-4">
-              <form>
+              <form
+                action="https://getform.io/f/f9207452-0f87-489e-85e5-6541feb2bd03"
+                method="POST"
+                encType="multipart/form-data"
+              >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
+                    <label className="uppercase text-sm py-2" for="name">
+                      Name
+                    </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-purple-500"
                       type="text"
+                      name="name"
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">
+                    <label className="uppercase text-sm py-2" for="tel">
                       Telephone Number
                     </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-purple-500"
                       type="text"
+                      name="tel"
                     />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label className="uppercase text-sm py-2" for="email">
+                    Email
+                  </label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-purple-500"
                     type="email"
+                    name="email"
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Subject</label>
+                  <label className="uppercase text-sm py-2" for="detail">
+                    Subject
+                  </label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-purple-500"
                     type="text"
+                    name="detail"
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
+                  <label className="uppercase text-sm py-2" for="message">
+                    Message
+                  </label>
                   <textarea
                     className="border-2 rounded-lg p-3 border-purple-500"
                     rows="17"
+                    name="message"
                   ></textarea>
                 </div>
                 <ButtonStyle className="shadow-xl shadow-[#64a25a]">
