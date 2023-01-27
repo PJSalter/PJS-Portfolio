@@ -18,7 +18,7 @@ const CreativeProjectItem = ({
         src={backgroundImg}
         alt="/"
       />
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] m-auto p-[4.5%]">
+      <UndercoatContent className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] m-auto p-[4.5%]">
         <TitleOfAwesomeWork className="text-2xl text-white tracking-wider text-center">
           {title}
         </TitleOfAwesomeWork>
@@ -33,12 +33,19 @@ const CreativeProjectItem = ({
             Click to view work
           </TextLink>
         </Link>
-      </div>
+      </UndercoatContent>
     </DevelopmentProject>
   );
 };
 
 export default CreativeProjectItem;
+
+const UndercoatContent = styled.div`
+  // for small mobile screens.
+  @media only screen and (max-width: 768px) {
+    padding: 7.5%;
+  }
+`;
 
 const DevelopmentProject = styled.div`
   ${tw`relative flex items-center justify-center h-auto w-full shadow-xl shadow-[#9892B1] rounded-xl p-4 hover:bg-gradient-to-r from-[#5651e5] to-cyan-900`}
@@ -125,9 +132,8 @@ const TextLink = styled.h3`
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
     font-size: 0.5rem;
-    padding: 0.1rem 0.2rem;
     &.access-project {
-      padding: 0.1rem 0.2rem;
+      padding: 0.3rem 0.1rem 0.1rem 0.1rem;
     }
   }
 `;
