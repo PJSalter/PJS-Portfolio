@@ -58,9 +58,15 @@ const Contact = () => {
                       <AiOutlineMail />
                     </AboutConnectButtonStyle>
                   </Link>
-                  <AboutConnectButtonStyle className="shadow-lg shadow-[#64a25a]">
-                    <BsFillPersonLinesFill />
-                  </AboutConnectButtonStyle>
+                  <a
+                    href="../assets/PJSCV.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AboutConnectButtonStyle className="shadow-lg shadow-[#64a25a]">
+                      <BsFillPersonLinesFill />
+                    </AboutConnectButtonStyle>
+                  </a>
                 </ConnectWrap>
               </div>
             </div>
