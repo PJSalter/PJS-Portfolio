@@ -144,15 +144,29 @@ const Navbar = () => {
             <div css={tw`pt-4`}>
               <ConnectTextStyle>Connect with me</ConnectTextStyle>
               <ConnectWrap>
-                <ConnectButtonStyle className="shadow-lg shadow-sky-900">
-                  <FaLinkedinIn />
-                </ConnectButtonStyle>
-                <ConnectButtonStyle className="shadow-lg shadow-sky-900">
-                  <FaGithub />
-                </ConnectButtonStyle>
-                <ConnectButtonStyle className="shadow-lg shadow-sky-900">
-                  <AiOutlineMail />
-                </ConnectButtonStyle>
+                <a
+                  href="https://www.linkedin.com/in/peter-james-salter/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ConnectButtonStyle className="shadow-lg shadow-sky-900">
+                    <FaLinkedinIn />
+                  </ConnectButtonStyle>
+                </a>
+                <a
+                  href="https://github.com/PJSalter"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ConnectButtonStyle className="shadow-lg shadow-sky-900">
+                    <FaGithub />
+                  </ConnectButtonStyle>
+                </a>
+                <Link href="mailto:psalter88@googlemail.com">
+                  <ConnectButtonStyle className="shadow-lg shadow-sky-900">
+                    <AiOutlineMail />
+                  </ConnectButtonStyle>
+                </Link>
                 <a href="../assets/PJSCV.pdf" target="_blank" rel="noreferrer">
                   <ConnectButtonStyle className="shadow-lg shadow-sky-900">
                     <BsFillPersonLinesFill />
