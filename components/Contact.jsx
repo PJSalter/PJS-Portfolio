@@ -58,16 +58,22 @@ const Contact = () => {
                       <AiOutlineMail />
                     </AboutConnectButtonStyle>
                   </Link>
-                  <AboutConnectButtonStyle className="shadow-lg shadow-[#64a25a]">
-                    <BsFillPersonLinesFill />
-                  </AboutConnectButtonStyle>
+                  <a
+                    href="../assets/PJSCV.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AboutConnectButtonStyle className="shadow-lg shadow-[#64a25a]">
+                      <BsFillPersonLinesFill />
+                    </AboutConnectButtonStyle>
+                  </a>
                 </ConnectWrap>
               </div>
             </div>
           </LeftSideContent>
 
           <RightSideContent>
-            <div className="p-4">
+            <div className="p-8">
               <form
                 action="https://getform.io/f/f9207452-0f87-489e-85e5-6541feb2bd03"
                 method="POST"
@@ -134,7 +140,7 @@ const Contact = () => {
         </GridSystem>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <ConditionalButton switchStyle={false}>
+            <ConditionalButton className="press-to-top" switchStyle={false}>
               Back to the top
             </ConditionalButton>
           </Link>
@@ -205,17 +211,74 @@ const ButtonStyle = styled.button`
   ${tw`w-full p-4 text-pink-900 bg-pink-400 border-2 rounded-xl border-pink-900 mt-4`}
 `;
 
-const ConditionalButton = styled.button(({ switchStyle }) => [
-  switchStyle
-    ? tw`bg-[#581c87] hover:bg-[#f43f5e]`
-    : tw`bg-[#0d9488] hover:bg-[#164e63]`,
-  tw`
-      text-slate-50
-      font-bold
-      py-2
-      px-4
-      border
-      border-black
-      rounded-full
-      `,
-]);
+// const ConditionalButton = styled.button(({ switchStyle }) => [
+//   switchStyle
+//     ? tw`bg-[#581c87] hover:bg-[#f43f5e]`
+//     : tw`bg-[#0d9488] hover:bg-[#164e63]`,
+//   tw`
+//       text-slate-50
+//       font-bold
+//       py-2
+//       px-4
+//       border
+//       border-black
+//       rounded-full
+//       `,
+// ]);
+
+const ConditionalButton = styled.button`
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+
+  &.press-to-top {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    background: #f6f0ff;
+    border: 2px solid #9c85b1;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+      background 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  &.press-to-top::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #dcc4f9;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #87b595;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+      box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  &.press-to-top:hover {
+    background: #f6f0ff;
+    transform: translate(0, 0.25em);
+  }
+  &.press-to-top:hover::before {
+    box-shadow: 0 0 0 2px #9c85b1, 0 0.5em 0 0 #f3e2ff;
+    transform: translate3d(0, 0.5em, -1em);
+  }
+  &.press-to-top:active {
+    background: #f6f0ff;
+    transform: translate(0em, 0.75em);
+  }
+  &.press-to-top:active::before {
+    box-shadow: 0 0 0 2px #9c85b1, 0 0 #f3e2ff;
+    transform: translate3d(0, 0, -1em);
+  }
+`;
