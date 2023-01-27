@@ -132,8 +132,13 @@ const TextLink = styled.h3`
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
     font-size: 0.5rem;
+    line-height: 0.5rem;
     &.access-project {
-      padding: 0.3rem 0.1rem 0.1rem 0.1rem;
+      // padding: 0.5rem 0.1rem 0.5rem 0.1rem;
+      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
     }
   }
 `;
