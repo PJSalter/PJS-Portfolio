@@ -236,8 +236,8 @@ const ConditionalButton = styled.button`
     color: #382b22;
     text-transform: uppercase;
     padding: 1.25em 2em;
-    background: #fff0f0;
-    border: 2px solid #b18597;
+    background: #f6f0ff;
+    border: 2px solid #9c85b1;
     border-radius: 0.75em;
     transform-style: preserve-3d;
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
@@ -252,7 +252,7 @@ const ConditionalButton = styled.button`
     left: 0;
     right: 0;
     bottom: 0;
-    background: #f9c4d2;
+    background: #dcc4f9;
     border-radius: inherit;
     box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #87b595;
     transform: translate3d(0, 0.75em, -1em);
@@ -260,19 +260,19 @@ const ConditionalButton = styled.button`
       box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
   }
   &.press-to-top:hover {
-    background: #ffe9e9;
+    background: #f6f0ff;
     transform: translate(0, 0.25em);
   }
   &.press-to-top:hover::before {
-    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #9c85b1, 0 0.5em 0 0 #f3e2ff;
     transform: translate3d(0, 0.5em, -1em);
   }
   &.press-to-top:active {
-    background: #ffe9e9;
+    background: #f6f0ff;
     transform: translate(0em, 0.75em);
   }
   &.press-to-top:active::before {
-    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #9c85b1, 0 0 #f3e2ff;
     transform: translate3d(0, 0, -1em);
   }
 `;
