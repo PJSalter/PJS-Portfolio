@@ -67,7 +67,7 @@ const Contact = () => {
           </LeftSideContent>
 
           <RightSideContent>
-            <div className="p-4">
+            <div className="p-8">
               <form
                 action="https://getform.io/f/f9207452-0f87-489e-85e5-6541feb2bd03"
                 method="POST"
