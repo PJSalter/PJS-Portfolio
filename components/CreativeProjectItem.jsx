@@ -62,6 +62,7 @@ const TitleOfAwesomeWork = styled.h3`
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
     font-size: 0.7rem;
+    line-height: 0.8rem;
   }
 `;
 
@@ -124,5 +125,9 @@ const TextLink = styled.h3`
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
     font-size: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    &.access-project {
+      padding: 0.1rem 0.2rem;
+    }
   }
 `;
