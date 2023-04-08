@@ -36,7 +36,6 @@ const Navbar = () => {
       <NavContainer>
         <div css={tw`w-16 h-16 mb-1 object-left-top`}>
           <Image
-            // src="/assets/pjs-software-developer.png"
             src={LogoFun}
             alt="pjs-logo-top"
             placeholder="art"
@@ -89,7 +88,6 @@ const Navbar = () => {
               <StyleBorder>
                 <Link href="/">
                   <Image
-                    // src="/assets/pjs-software-developer.png"
                     src={LogoFun}
                     alt="pjs-logo"
                     width={150}
@@ -167,7 +165,11 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </ConnectButtonStyle>
                 </Link>
-                <a href="../assets/PJSCV.pdf" target="_blank" rel="noreferrer">
+                <a
+                  href="../assets/Peter_James_Salter_Developer_CV_2023.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <ConnectButtonStyle className="shadow-lg shadow-sky-900">
                     <BsFillPersonLinesFill />
                   </ConnectButtonStyle>
