@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import LogoFun from "../public/assets/Projects/pjs-software-developer.png";
+import LogoFun from "public/assets/Peter_James_Salter_Developer_CV_2023.pdf";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
@@ -189,15 +189,7 @@ const HiddenMobileViewNavArea = styled.div`
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
     opacity: 1;
-    // display: none;
     font-size: 0.8rem;
-    // background: rgb(244, 249, 114);
-    // background: radial-gradient(
-    //   circle,
-    //   rgba(244, 249, 114, 1) 0%,
-    //   rgba(171, 148, 233, 1) 100%
-    // );
-    // border-radius: 25px;
   }
 `;
 
@@ -218,16 +210,6 @@ text-sm
 uppercase
 hover:border-b
 `;
-
-// const OverlayBackStyling = styled.div(({ navbar }) => [
-//   navbar ? tw`fixed left-0 top-0 w-full h-screen bg-purple-800/70` : "",
-// ]);
-
-// const SideDrawMenu = styled.div(({ navbar }) => [
-//   navbar
-//     ? tw`fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-pink-200 p-10 ease-in duration-500`
-//     : tw`fixed left-[-100%] top-0 p-10 ease-in duration-500`,
-// ]);
 
 const TopSideDrawMenuStyling = tw.div`
 flex
