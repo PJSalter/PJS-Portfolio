@@ -59,7 +59,7 @@ const Contact = () => {
                     </AboutConnectButtonStyle>
                   </Link>
                   <a
-                    href="../assets/PJSCV.pdf"
+                    href="../assets/Peter_James_Salter_Developer_CV_2023.pdf"
                     target="_blank"
                     rel="noreferrer"
                   >
