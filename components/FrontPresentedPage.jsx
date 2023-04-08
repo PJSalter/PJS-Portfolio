@@ -5,7 +5,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
-// import cv from "./public/assets/PJSCV.pdf";
 
 const FrontPresentedPage = () => {
   return (
