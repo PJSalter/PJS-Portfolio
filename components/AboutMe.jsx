@@ -100,7 +100,7 @@ const BioAboutMe = tw.p`
 py-4
 m-auto
 text-purple-900
-max-w-[70%]
+max-w-[90%]
 text-xs
 sm:text-sm
 `;
