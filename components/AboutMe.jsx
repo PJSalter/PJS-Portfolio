@@ -18,12 +18,14 @@ const AboutMe = () => {
             recently, I achieved a Level 3 Web Design and Development
             Certificate from Stonebridge Associated Colleges.
             <br></br>
+            <br></br>
             During the first lockdown, my partner and I paired up to tackle
             coding challenges together, which sparked my passion for coding. I
             discovered an amazing community of like-minded individuals and
             eventually landed at Founders and Coders, where I honed my skills in
             HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, and
             PostgreSQL.
+            <br></br>
             <br></br>
             What sets me apart from others is my previous experience in
             illustration, which brings a unique perspective to my work. I love
@@ -32,6 +34,7 @@ const AboutMe = () => {
             willing to go the extra mile to ensure my team succeeds, and
             I&apos;m an excellent communicator.
             <br></br>
+            <br></br>
             Apart from my coding skills, I&apos;ve also been exploring new
             programming languages such as Java, Python, TypeScript, and Ruby.
             I&apos;ve even worked on some exciting self-projects such as Rat
@@ -39,6 +42,7 @@ const AboutMe = () => {
             defeat invading rats with balls of yarn. Currently, I&apos;m working
             on a React and TypeScript project with my partner called Giggle
             Click, a joke app that fetches data from a Dad Jokes API.
+            <br></br>
             <br></br>
             My portfolio is a reflection of my skills and creativity, built with
             Next.js, React.js, Styled Components, and TailwindCSS. If
