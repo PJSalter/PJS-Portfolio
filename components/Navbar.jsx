@@ -36,7 +36,6 @@ const Navbar = () => {
       <NavContainer>
         <div css={tw`w-16 h-16 mb-1 object-left-top`}>
           <Image
-            // src="/assets/pjs-software-developer.png"
             src={LogoFun}
             alt="pjs-logo-top"
             placeholder="art"
@@ -89,7 +88,6 @@ const Navbar = () => {
               <StyleBorder>
                 <Link href="/">
                   <Image
-                    // src="/assets/pjs-software-developer.png"
                     src={LogoFun}
                     alt="pjs-logo"
                     width={150}
@@ -167,7 +165,11 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </ConnectButtonStyle>
                 </Link>
-                <a href="../assets/PJSCV.pdf" target="_blank" rel="noreferrer">
+                <a
+                  href="../assets/Peter_James_Salter_Developer_CV_2023.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <ConnectButtonStyle className="shadow-lg shadow-sky-900">
                     <BsFillPersonLinesFill />
                   </ConnectButtonStyle>
@@ -187,15 +189,7 @@ const HiddenMobileViewNavArea = styled.div`
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
     opacity: 1;
-    // display: none;
     font-size: 0.8rem;
-    // background: rgb(244, 249, 114);
-    // background: radial-gradient(
-    //   circle,
-    //   rgba(244, 249, 114, 1) 0%,
-    //   rgba(171, 148, 233, 1) 100%
-    // );
-    // border-radius: 25px;
   }
 `;
 
@@ -216,16 +210,6 @@ text-sm
 uppercase
 hover:border-b
 `;
-
-// const OverlayBackStyling = styled.div(({ navbar }) => [
-//   navbar ? tw`fixed left-0 top-0 w-full h-screen bg-purple-800/70` : "",
-// ]);
-
-// const SideDrawMenu = styled.div(({ navbar }) => [
-//   navbar
-//     ? tw`fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-pink-200 p-10 ease-in duration-500`
-//     : tw`fixed left-[-100%] top-0 p-10 ease-in duration-500`,
-// ]);
 
 const TopSideDrawMenuStyling = tw.div`
 flex

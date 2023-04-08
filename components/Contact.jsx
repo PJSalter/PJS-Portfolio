@@ -59,7 +59,7 @@ const Contact = () => {
                     </AboutConnectButtonStyle>
                   </Link>
                   <a
-                    href="../assets/PJSCV.pdf"
+                    href="../assets/Peter_James_Salter_Developer_CV_2023.pdf"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -210,21 +210,6 @@ const RightSideContent = styled.div`
 const ButtonStyle = styled.button`
   ${tw`w-full p-4 text-pink-900 bg-pink-400 border-2 rounded-xl border-pink-900 mt-4`}
 `;
-
-// const ConditionalButton = styled.button(({ switchStyle }) => [
-//   switchStyle
-//     ? tw`bg-[#581c87] hover:bg-[#f43f5e]`
-//     : tw`bg-[#0d9488] hover:bg-[#164e63]`,
-//   tw`
-//       text-slate-50
-//       font-bold
-//       py-2
-//       px-4
-//       border
-//       border-black
-//       rounded-full
-//       `,
-// ]);
 
 const ConditionalButton = styled.button`
   position: relative;

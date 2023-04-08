@@ -5,7 +5,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
-// import cv from "./public/assets/PJSCV.pdf";
 
 const FrontPresentedPage = () => {
   return (
@@ -57,7 +56,11 @@ const FrontPresentedPage = () => {
               <AiOutlineMail />
             </AboutConnectButtonStyle>
           </Link>
-          <a href="../assets/PJSCV.pdf" target="_blank" rel="noreferrer">
+          <a
+            href="../assets/Peter_James_Salter_Developer_CV_2023.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
               <BsFillPersonLinesFill />
             </AboutConnectButtonStyle>
@@ -130,8 +133,6 @@ const IntroductionStyle = styled.h2`
 
 const HomePageContainer = tw.div`
 max-w-[1240px]
-// w-full
-// h-full
 mx-auto
 p-2
 flex
