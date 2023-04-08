@@ -133,8 +133,6 @@ const IntroductionStyle = styled.h2`
 
 const HomePageContainer = tw.div`
 max-w-[1240px]
-// w-full
-// h-full
 mx-auto
 p-2
 flex
