@@ -57,7 +57,11 @@ const FrontPresentedPage = () => {
               <AiOutlineMail />
             </AboutConnectButtonStyle>
           </Link>
-          <a href="../assets/PJSCV.pdf" target="_blank" rel="noreferrer">
+          <a
+            href="../assets/Peter_James_Salter_Developer_CV_2023.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AboutConnectButtonStyle className="shadow-lg shadow-yellow-400">
               <BsFillPersonLinesFill />
             </AboutConnectButtonStyle>
