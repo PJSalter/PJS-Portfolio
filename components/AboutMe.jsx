@@ -102,5 +102,5 @@ m-auto
 text-purple-900
 max-w-[70%]
 text-xs
-xl:text-xl
+sm:text-sm
 `;
