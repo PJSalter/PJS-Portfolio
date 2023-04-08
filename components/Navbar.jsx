@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import LogoFun from "public/assets/Peter_James_Salter_Developer_CV_2023.pdf";
+import LogoFun from "../public/assets/Projects/pjs-software-developer.png";
 import styled from "styled-components";
 import tw from "twin.macro";
 import Link from "next/link";
