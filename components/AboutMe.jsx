@@ -83,7 +83,7 @@ const RainbowTitle = styled.h1`
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
     font-size: 1.8rem;
-    margin-top: 18rem;
+    margin-top: 5rem;
   }
 `;
 
@@ -100,7 +100,7 @@ const BioAboutMe = tw.p`
 py-4
 m-auto
 text-purple-900
-max-w-[90%]
-text-xs
+max-w-[95%]
+text-[0.58rem]
 sm:text-sm
 `;
