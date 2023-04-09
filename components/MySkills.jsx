@@ -373,7 +373,7 @@ const RainbowTitle = styled.p`
   // for small mobile screens.
   @media only screen and (max-width: 768px) {
     font-size: 1.8rem;
-    margin-top: 10px;
+    margin-top: 5rem;
   }
 `;
 
