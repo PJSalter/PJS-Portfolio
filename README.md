@@ -1,6 +1,7 @@
 # PJS Software Developer Portfolio
 
-![Pjs-SOFTWARE-DEVELOPER](https://user-images.githubusercontent.com/45575016/197906613-522a34b1-f3ef-4a34-892b-4e7d71cee355.png)
+
+![Pjs_SOFTWARE_DEVELOPER_Logo](https://user-images.githubusercontent.com/45575016/234418460-7b546226-23d5-4bce-8de3-bb25a0f08cdb.png)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
